@@ -334,9 +334,6 @@ def main() -> int:
                 record["lowest"] = price
                 record["lowest_at"] = stamp
 
-            if fallback:
-                events.append(f"⚠️ {name} : variante non trouvée, prix générique utilisé ({money(price)})")
-                alerts += 1
             if is_new_low and prev_price is not None:
                 events.append(f"📉 NOUVEAU PLUS BAS — {name} : {money(price)} (préc. {money(prev_price)}) — {url}")
                 alerts += 1
