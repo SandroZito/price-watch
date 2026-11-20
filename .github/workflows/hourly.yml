@@ -1,0 +1,40 @@
+name: Veille prix horaire
+
+on:
+  schedule:
+    # Toutes les heures à HH:07 UTC (GitHub décale parfois de quelques minutes).
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: price-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installation
+        run: pip install -r requirements.txt
+
+      - name: Vérification des prix
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python watch.py
+
+      - name: Sauvegarde de l'historique
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update price history"
+          file_pattern: history.json

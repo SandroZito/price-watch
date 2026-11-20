@@ -1,0 +1,263 @@
+{
+  "products": {
+    "leenbakker-irene-noyer": {
+      "name": "Leen Bakker — Table Irene noyer extensible",
+      "url": "https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-manger/table-de-salle-a-manger-irene-couleur-noyer-extensible",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 649.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 649.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "lumz-kare-dollar": {
+      "name": "LUMZ — Tabouret Kare Design Dollar",
+      "url": "https://www.lumz.be/tafels/bijzettafels/kare-design-stool-ludieke-krukje",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 125.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "mdm-griffith": {
+      "name": "Maisons du Monde — Étagère Griffith",
+      "url": "https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
+        }
+      ],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "sweeek-lennox-bordeaux": {
+      "name": "sweeek — Étagère Lennox bordeaux",
+      "url": "https://fr.sweeek.be/product/etagere-metal-et-decor-bois-2-portes-bordeaux",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 169.99,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "ram-lura5": {
+      "name": "RÅM — Table basse LURA_5 aluminium 100 cm",
+      "url": "https://www.raamint.com/fr/products/lura_5-table-basse-en-aluminium-100-cm",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        }
+      ],
+      "lowest": 327.95,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "fitueyes-picasso": {
+      "name": "FITUEYES — Support TV Picasso (Walnut / With)",
+      "url": "https://eu.fitueyes.com/products/picasso-serie-%e2%84%a2-tv-stand-for-32-65-inches?variant=50272563593482",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [
+            "code BF15",
+            "code FITUEYES05"
+          ],
+          "source": "texte"
+        }
+      ],
+      "lowest": 218.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "home24-hossa": {
+      "name": "home24 — Chaises Hossa lot de 2",
+      "url": "https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitation-cuir-fer-noir-noyer",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        }
+      ],
+      "lowest": 118.99,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "jotex-irma": {
+      "name": "Jotex — Tapis Irma 2212904-03",
+      "url": "https://www.jotex.be/irma-tapijt/2212904-03",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [
+            "code MIX30"
+          ],
+          "source": "texte"
+        }
+      ],
+      "lowest": 47.3,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "vidaxl-pouf-noir": {
+      "name": "vidaXL — Pouf cuir de chèvre noir 60x60x30",
+      "url": "https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-veritable-de-chevre/8719883562636.html",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 151.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        }
+      ],
+      "lowest": 151.99,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "jysk-marstrand": {
+      "name": "JYSK — Table MARSTRAND Ø110/110x200 chêne",
+      "url": "https://jysk.be/fr/salle-manger/tables-manger/table-marstrand-o110-110x200-chene-naturel?article=3640235",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 300.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "sklum-montana": {
+      "name": "SKLUM — Table extensible Montana 120-160",
+      "url": "https://www.sklum.com/fr/acheter-tables-salle-a-manger/206144-table-a-manger-ronde-extensible-120-160x120-cm-en-mdf-et-placage-chene-montana.html",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 649.95,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "themasie-beca": {
+      "name": "The Masie — Table ronde extensible Beca",
+      "url": "https://www.themasie.com/fr/acheter-tableaux-extensibles/228667-table-de-salle-a-manger-ronde-extensible-en-metal-o120-240x120-cm-beca.html?id_c=679446",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 829.95,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "sklum-alicia": {
+      "name": "SKLUM — Suspension fer Alicia",
+      "url": "https://www.sklum.com/fr/acheter-suspension/148555-suspension-en-fer-alicia.html?id_c=466845",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 40.95,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "emma-original-160x200": {
+      "name": "Emma — Matelas Original 160x200 (Super Deal)",
+      "url": "https://www.emma-matelas.be/ensembles/super-deal-original/?selection=EMAHE160200AAC:1,ESSES160200AAE:1,EPWCF040070RAB:2,EDVSF240220AAA:1",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 880.05,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "emma-original-plus-160x200": {
+      "name": "Emma — Matelas Original+ 160x200 (Super Deal Plus)",
+      "url": "https://www.emma-matelas.be/ensembles/super-deal-plus-original-plus/?selection=EMAHE160200ATE:1,EPWCF040070RAB:2,EDVLD200200AAA:1",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 1556.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "jysk-ellinge-160": {
+      "name": "JYSK — Cadre de lit ELLINGE 160x200 rangement",
+      "url": "https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 200.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    }
+  },
+  "last_digest": "2026-11-20"
+}

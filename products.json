@@ -1,0 +1,100 @@
+{
+  "settings": {
+    "digest_hour_utc": 8,
+    "report_mode": "changes"
+  },
+  "products": [
+    {
+      "id": "leenbakker-irene-noyer",
+      "name": "Leen Bakker — Table Irene noyer extensible",
+      "url": "https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-manger/table-de-salle-a-manger-irene-couleur-noyer-extensible",
+      "variant_match": "noyer"
+    },
+    {
+      "id": "lumz-kare-dollar",
+      "name": "LUMZ — Tabouret Kare Design Dollar",
+      "url": "https://www.lumz.be/tafels/bijzettafels/kare-design-stool-ludieke-krukje"
+    },
+    {
+      "id": "mdm-griffith",
+      "name": "Maisons du Monde — Étagère Griffith",
+      "url": "https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm"
+    },
+    {
+      "id": "sweeek-lennox-bordeaux",
+      "name": "sweeek — Étagère Lennox bordeaux",
+      "url": "https://fr.sweeek.be/product/etagere-metal-et-decor-bois-2-portes-bordeaux"
+    },
+    {
+      "id": "ram-lura5",
+      "name": "RÅM — Table basse LURA_5 aluminium 100 cm",
+      "url": "https://www.raamint.com/fr/products/lura_5-table-basse-en-aluminium-100-cm",
+      "variant_sku": "2008"
+    },
+    {
+      "id": "fitueyes-picasso",
+      "name": "FITUEYES — Support TV Picasso (Walnut / With)",
+      "url": "https://eu.fitueyes.com/products/picasso-serie-%e2%84%a2-tv-stand-for-32-65-inches?variant=50272563593482",
+      "variant_sku": "50272563593482",
+      "text_match": "Picasso FT65"
+    },
+    {
+      "id": "home24-hossa",
+      "name": "home24 — Chaises Hossa lot de 2",
+      "url": "https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitation-cuir-fer-noir-noyer"
+    },
+    {
+      "id": "jotex-irma",
+      "name": "Jotex — Tapis Irma 2212904-03",
+      "url": "https://www.jotex.be/irma-tapijt/2212904-03",
+      "text_match": "IRMA tapijt"
+    },
+    {
+      "id": "vidaxl-pouf-noir",
+      "name": "vidaXL — Pouf cuir de chèvre noir 60x60x30",
+      "url": "https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-veritable-de-chevre/8719883562636.html",
+      "variant_match": "Noir",
+      "text_match": "Pouf 60 x 60 x 30 cm Noir"
+    },
+    {
+      "id": "jysk-marstrand",
+      "name": "JYSK — Table MARSTRAND Ø110/110x200 chêne",
+      "url": "https://jysk.be/fr/salle-manger/tables-manger/table-marstrand-o110-110x200-chene-naturel?article=3640235",
+      "variant_match": "Ø110/110x200"
+    },
+    {
+      "id": "sklum-montana",
+      "name": "SKLUM — Table extensible Montana 120-160",
+      "url": "https://www.sklum.com/fr/acheter-tables-salle-a-manger/206144-table-a-manger-ronde-extensible-120-160x120-cm-en-mdf-et-placage-chene-montana.html",
+      "variant_match": "Bois Naturel"
+    },
+    {
+      "id": "themasie-beca",
+      "name": "The Masie — Table ronde extensible Beca",
+      "url": "https://www.themasie.com/fr/acheter-tableaux-extensibles/228667-table-de-salle-a-manger-ronde-extensible-en-metal-o120-240x120-cm-beca.html?id_c=679446"
+    },
+    {
+      "id": "sklum-alicia",
+      "name": "SKLUM — Suspension fer Alicia",
+      "url": "https://www.sklum.com/fr/acheter-suspension/148555-suspension-en-fer-alicia.html?id_c=466845"
+    },
+    {
+      "id": "emma-original-160x200",
+      "name": "Emma — Matelas Original 160x200 (Super Deal)",
+      "url": "https://www.emma-matelas.be/ensembles/super-deal-original/?selection=EMAHE160200AAC:1,ESSES160200AAE:1,EPWCF040070RAB:2,EDVSF240220AAA:1",
+      "variant_sku": "EMAHE160200AAC"
+    },
+    {
+      "id": "emma-original-plus-160x200",
+      "name": "Emma — Matelas Original+ 160x200 (Super Deal Plus)",
+      "url": "https://www.emma-matelas.be/ensembles/super-deal-plus-original-plus/?selection=EMAHE160200ATE:1,EPWCF040070RAB:2,EDVLD200200AAA:1",
+      "variant_sku": "EMAHE160200ATE"
+    },
+    {
+      "id": "jysk-ellinge-160",
+      "name": "JYSK — Cadre de lit ELLINGE 160x200 rangement",
+      "url": "https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement",
+      "variant_match": "160x200 a/rangement"
+    }
+  ]
+}
