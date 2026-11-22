@@ -64,6 +64,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 649.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 649.0,
@@ -136,6 +144,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 125.0,
@@ -184,6 +200,11 @@
           "t": "2026-11-22T00:15:09+00:00",
           "price": null,
           "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
         }
       ],
       "lowest": null,
@@ -256,6 +277,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 169.99,
@@ -323,6 +352,14 @@
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
           "price": 327.95,
           "currency": "EUR",
           "availability": "InStock",
@@ -403,6 +440,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 218.0,
@@ -472,6 +517,11 @@
           "availability": "inconnue",
           "promo": [],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
         }
       ],
       "lowest": 118.99,
@@ -555,6 +605,11 @@
             "code MIX30"
           ],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.jotex.be/irma-tapijt/2212904-03"
         }
       ],
       "lowest": 47.3,
@@ -624,6 +679,11 @@
           "availability": "inconnue",
           "promo": [],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
         }
       ],
       "lowest": 151.99,
@@ -691,6 +751,14 @@
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
           "price": 300.0,
           "currency": "EUR",
           "availability": "",
@@ -768,6 +836,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 649.95,
@@ -835,6 +911,14 @@
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
           "price": 829.95,
           "currency": "EUR",
           "availability": "InStock",
@@ -912,6 +996,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 40.95,
@@ -979,6 +1071,14 @@
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
           "price": 880.05,
           "currency": "EUR",
           "availability": "InStock",
@@ -1056,6 +1156,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 1556.0,
@@ -1123,6 +1231,14 @@
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
           "price": 200.0,
           "currency": "EUR",
           "availability": "",
