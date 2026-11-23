@@ -1,6 +1,6 @@
 # Veille prix → Telegram
 
-Surveille 16 products toutes les heures, détecte les baisses, les promos et les retours en stock, et envoie un rapport sur Telegram (bot « Hermes » ou n'importe quel bot).
+Surveille 16 products toutes les heures, détecte les baisses, les promos et les retours en stock, et envoie un rapport sur Telegram via **@FolioPrixBot** (bot dédié aux prix).
 
 ## Principe
 
@@ -24,7 +24,7 @@ GitHub Actions est gratuit pour ce volume (≈ 360 min/mois, bien sous les 2000 
    ```
 
 2. Récupère les identifiants Telegram :
-   - Parle à **@BotFather** → `/newbot` → il te donne un **token** (pour ton bot Hermes, utilise son token existant).
+   - Parle à **@BotFather** → `/newbot` → il te donne un **token** (le bot Prix est déjà créé : @FolioPrixBot).
    - Récupère le **chat ID** : envoie un message au bot, puis ouvre `https://api.telegram.org/bot<TOKEN>/getUpdates` et lis `"chat":{"id": ...}`.
 
 3. Dans le repo GitHub → **Settings → Secrets and variables → Actions → New repository secret** :
@@ -39,7 +39,7 @@ Dans `products.json` → `settings` :
 - `report_mode` : `changes` (défaut, message seulement si quelque chose bouge) ou `always` (rapport à chaque passage).
 - `digest_hour_utc` : heure UTC du rapport complet quotidien (défaut `8`, donc 10 h en Belgique en été).
 
-Variables d'environnement possibles dans le workflow : `REPORT_MODE`, `DIGEST_HOUR_UTC`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
+Variables d'environnement possibles dans le workflow : `REPORT_MODE`, `DIGEST_HOUR_UTC`, `TELEGRAM_BOT_TOKEN` (= @FolioPrixBot), `TELEGRAM_CHAT_ID`, ou `PRICE_TELEGRAM_*`.
 
 ## Ajouter un produit
 
