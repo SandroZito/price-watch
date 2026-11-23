@@ -170,7 +170,7 @@ def promo_from_text(text: str) -> list[str]:
         r"(?:discount\s+)?code\s*:?\s*([A-Z0-9]{4,16})",
         r"with\s+code\s*:?\s*([A-Z0-9]{4,16})",
         r"kortingscode\s*:?\s*([A-Z0-9]{4,16})",
-        r"code\s+promo|s*:?\s*([A-Z0-9]{4,16})",
+        r"code\s+promo\s*:?\s*([A-Z0-9]{4,16})",
     ]
     for pattern in patterns:
         for m in re.finditer(pattern, text[:20000], re.I):
@@ -305,12 +305,14 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     stamp = now.isoformat(timespec="seconds")
     today = now.date().isoformat()
+
     events: list[str] = []
     digest_rows: list[str] = []
     alerts = 0
+
     for product in cfg["products"]:
         pid = product["id"]
-        name = product[name"]
+        name = product["name"]
         url = product["url"]
         record = history["products"].setdefault(
             pid, {"name": name, "url": url, "points": [], "lowest": None, "lowest_at": None}
