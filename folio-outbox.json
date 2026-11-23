@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261123T190515",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n📈 *QTUM* +5,3 % sur 24 h (≥ 5 %)\n   2,11 € · QTUM\n📈 *SOL* +5,0 % sur 24 h (≥ 5 %)\n   6,13 € · Solana\n\nPortefeuille : +3,3 % (248,73 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-23T19:01:07.190Z",
   "chat_id": "9261328582"
 }
