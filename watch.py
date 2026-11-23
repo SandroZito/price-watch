@@ -273,10 +273,12 @@ def promo_hints(soup: BeautifulSoup, offer: dict, product: dict) -> list[str]:
 
 
 def telegram(text: str) -> None:
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    chat = os.environ.get("TELEGRAM_CHAT_ID")
+    # Bot dédié au suivi prix. Le secret TELEGRAM_BOT_TOKEN du repo pointe sur
+    # @FolioPrixBot ; PRICE_* permet de forcer un autre bot si besoin.
+    token = os.environ.get("PRICE_TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN")
+    chat = os.environ.get("PRICE_TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat:
-        log("Telegram non configure (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID absents)")
+        log("Telegram non configure (PRICE_TELEGRAM_BOT_TOKEN / PRICE_TELEGRAM_CHAT_ID absents)")
         return
     for chunk in [text[i : i + 3500] for i in range(0, len(text), 3500)]:
         try:
