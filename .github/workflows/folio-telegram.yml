@@ -2,7 +2,6 @@ name: Folio → Telegram
 
 on:
   schedule:
-    # Toutes les 30 min : le relais délivre les messages déposés par le Mac.
     - cron: "3,33 * * * *"
   workflow_dispatch:
 
@@ -23,8 +22,10 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Envoi des messages Folio en attente
+      - name: "Envoi des messages Folio en attente"
         env:
+          FOLIO_TELEGRAM_BOT_TOKEN: ${{ secrets.FOLIO_TELEGRAM_BOT_TOKEN }}
+          FOLIO_TELEGRAM_CHAT_ID: ${{ secrets.FOLIO_TELEGRAM_CHAT_ID }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: node folio_send.mjs
