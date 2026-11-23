@@ -29,7 +29,8 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: node folio_send.mjs
 
-      - name: Nettoyage de l'outbox
+      - name: "Nettoyage de l’outbox"
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: clear folio telegram outbox"
