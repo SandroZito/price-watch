@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -86,30 +87,53 @@ def save_history(history: dict) -> None:
         f.write("\n")
 
 
-def fetch_page(url: str) -> dict:
-    """Retourne {soup, text, source}. Repli sur un lecteur de texte si le site bloque."""
-    try:
-        r = requests.get(
-            url,
-            headers={
-                "User-Agent": UA,
-                "Accept-Language": "fr-BE,fr;q=0.9,nl;q=0.8,en;q=0.7",
-                "Accept": "text/html,application/xhtml+xml",
-            },
-            timeout=TIMEOUT,
-        )
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
-        if jsonld_products(soup):
-            return {"soup": soup, "text": soup.get_text(" ", strip=True), "source": "direct"}
-    except requests.RequestException:
-        pass
+def fetch_page(url: str, cfg: dict) -> dict:
+    """Retourne {soup, text, source, price_hint}.
 
-    # Repli : lecteur de texte public (contourne 403/429 sans captcha).
-    r = requests.get("https://r.jina.ai/" + url, timeout=60)
-    r.raise_for_status()
-    text = r.text
-    return {"soup": BeautifulSoup(text, "html.parser"), "text": text, "source": "texte"}
+    1. GET direct + JSON-LD, 2. GET direct + texte, 3. lecteur de texte en repli.
+    Deux tentatives à chaque étape : les IP GitHub Actions sont parfois limitées.
+    """
+    errors: list[str] = []
+    for attempt in range(2):
+        try:
+            r = requests.get(
+                url,
+                headers={
+                    "User-Agent": UA,
+                    "Accept-Language": "fr-BE,fr;q=0.9,nl;q=0.8,en;q=0.7",
+                    "Accept": "text/html,application/xhtml+xml",
+                },
+                timeout=TIMEOUT,
+            )
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "html.parser")
+            text = soup.get_text(" ", strip=True)
+            if jsonld_products(soup):
+                return {"soup": soup, "text": text, "source": "direct", "price_hint": None}
+            hint = text_price(text, cfg)
+            if hint is not None:
+                return {"soup": soup, "text": text, "source": "direct-texte", "price_hint": hint}
+        except requests.RequestException as e:
+            errors.append(f"direct: {type(e).__name___: {str(e)[:80]}")
+        if attempt == 0:
+            time.sleep(1)
+
+    for attempt in range(2):
+        try:
+            r = requests.get("https://r.jina.ai/" + url, timeout=60)
+            r.raise_for_status()
+            text = r.text
+            return {
+                "soup": BeautifulSoup(text, "html.parser"),
+                "text": text,
+                "source": "texte",
+                "price_hint": None,
+            }
+        except requests.RequestException as e:
+            errors.append(f"texte: {type(e).__name__}: {str(e)[:80]}")
+            if attempt == 0:
+                time.sleep(3)
+    raise RuntimeError("; ".join(errors))
 
 
 def text_price(text: str, cfg: dict) -> float | None:
@@ -146,7 +170,7 @@ def promo_from_text(text: str) -> list[str]:
         r"(?:discount\s+)?code\s*:?\s*([A-Z0-9]{4,16})",
         r"with\s+code\s*:?\s*([A-Z0-9]{4,16})",
         r"kortingscode\s*:?\s*([A-Z0-9]{4,16})",
-        r"code\s+promo\s*:?\s*([A-Z0-9]{4,16})",
+        r"code\s+promo|s*:?\s*([A-Z0-9]{4,16})",
     ]
     for pattern in patterns:
         for m in re.finditer(pattern, text[:20000], re.I):
@@ -281,14 +305,12 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     stamp = now.isoformat(timespec="seconds")
     today = now.date().isoformat()
-
     events: list[str] = []
     digest_rows: list[str] = []
     alerts = 0
-
     for product in cfg["products"]:
         pid = product["id"]
-        name = product["name"]
+        name = product[name"]
         url = product["url"]
         record = history["products"].setdefault(
             pid, {"name": name, "url": url, "points": [], "lowest": None, "lowest_at": None}
@@ -297,7 +319,7 @@ def main() -> int:
         record["url"] = url
 
         try:
-            page = fetch_page(url)
+            page = fetch_page(url, product)
             soup, text = page["soup"], page["text"]
             pnode, offer, fallback = pick_offer(jsonld_products(soup), product, url)
             if offer and to_float(offer.get("price")) is not None:
@@ -306,7 +328,7 @@ def main() -> int:
                 promos = promo_hints(soup, offer, pnode or {})
                 availability = str(offer.get("availability", "")).split("/")[-1]
             else:
-                price = text_price(text, product)
+                price = page.get("price_hint") or text_price(text, product)
                 if price is None:
                     raise ValueError("aucun prix trouvé (JSON-LD et texte)")
                 currency = "EUR"
