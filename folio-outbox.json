@@ -1,11 +1,5 @@
 {
-  "messages": [
-    {
-      "id": "live-activation-2026-11-23",
-      "kind": "info",
-      "text": "✅ *Veille en direct activée*\n\nChaque franchissement de seuil arrive ici en quelques minutes :\n• 📈/📉 ±5 % sur 24 h\n• 🚨 ±10 % (alerte renforcée)\n\nUn actif ne déclenche qu'une alerte par palier, sans répétition. Le récap du matin ne part que si aucune alerte n'est passée dans les 24 h."
-    }
-  ],
-  "last_run": "2026-11-23T18:44:27.126Z",
+  "messages": [],
+  "last_run": "2026-11-23T19:00:17.295Z",
   "chat_id": "9261328582"
 }
