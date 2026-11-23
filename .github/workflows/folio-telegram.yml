@@ -1,0 +1,36 @@
+name: Folio → Telegram
+
+on:
+  schedule:
+    # Toutes les 30 min : le relais délivre les messages déposés par le Mac.
+    - cron: "3,33 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: folio-telegram
+  cancel-in-progress: false
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Envoi des messages Folio en attente
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node folio_send.mjs
+
+      - name: Nettoyage de l'outbox
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: clear folio telegram outbox"
+          file_pattern: folio-outbox.json
