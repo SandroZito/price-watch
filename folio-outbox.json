@@ -1,11 +1,5 @@
 {
-  "messages": [
-    {
-      "id": "live-20261123T230515",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n📈 *VET* +5,0 % sur 24 h (≥ 5 %)\n   1,95 € · VET\n\nPortefeuille : +3,1 % (236,13 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-23T19:20:29.738Z",
+  "messages": [],
+  "last_run": "2026-11-23T23:05:28.932Z",
   "chat_id": "9261328582"
 }
