@@ -114,7 +114,7 @@ def fetch_page(url: str, cfg: dict) -> dict:
             if hint is not None:
                 return {"soup": soup, "text": text, "source": "direct-texte", "price_hint": hint}
         except requests.RequestException as e:
-            errors.append(f"direct: {type(e).__name___: {str(e)[:80]}")
+            errors.append(f"direct: {type(e).__name__}: {str(e)[:80]}")
         if attempt == 0:
             time.sleep(1)
 
