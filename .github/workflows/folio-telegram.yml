@@ -2,7 +2,12 @@ name: Folio → Telegram
 
 on:
   schedule:
-    - cron: "3,33 * * * *"
+    # Filet de sécurité si un push est manqué.
+    - cron: "*/5 * * * *"
+  # Livraison quasi immédiate : le Mac pousse l'outbox → le workflow part.
+  push:
+    paths:
+      - folio-outbox.json
   workflow_dispatch:
 
 permissions:
@@ -14,6 +19,8 @@ concurrency:
 
 jobs:
   relay:
+    # Évite la boucle : le commit de nettoyage est fait par le bot.
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
