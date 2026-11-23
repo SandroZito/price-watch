@@ -1,10 +1,4 @@
 {
-  "messages": [
-    {
-      "id": "daily-2026-11-23",
-      "kind": "daily",
-      "text": "🔔 *Folio — mouvements 24 h*\n\n*ETF*\n📈 LSMC +15,7 % · 21,84 € — Amundi MSCI Semiconductors UCITS ETF\n📈 AMEM +7,6 % · 32,44 € — Amundi MSCI Emerging Markets Swap -UCITS ETF EUR C- Capitalisation\n📈 2B76 +7,0 % · 20,36 € — iShares Automation & Robotics UCITS ETF\n📈 NQSE +5,4 % · 17,37 € — iShares NASDAQ 100 UCITS ETF\n\n*Actions*\n📈 NVDA +35,5 % · 18,32 € — NVIDIA\n📈 ALAB +20,0 % · 5,86 € — Astera Labs\n📈 PLTR +12,2 % · 9,79 € — Palantir\n\n*Crypto*\n📈 SOL +7,3 % · 8,99 € — Solana\n📈 XRP +7,3 % · 4,23 € — XRP\n"
-    }
-  ],
-  "last_run": null
+  "messages": [],
+  "last_run": "2026-11-23T16:06:17.768Z"
 }
