@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261123T190054",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n📈 *NVDA* +30,8 % sur 24 h (≥ 10 %)\n   15,92 € · NVIDIA\n\nPortefeuille : +3,2 % (243,20 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-23T19:00:17.295Z",
   "chat_id": "9261328582"
 }
