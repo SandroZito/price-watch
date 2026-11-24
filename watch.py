@@ -162,7 +162,7 @@ def shopify_offer(url: str, cfg: dict) -> dict | None:
     }
 
 
-def fetch_page(url: str, cfg: dict) -> dict:
+def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
     """Retourne {soup, text, source, price_hint}.
 
     1. GET direct + JSON-LD, 2. GET direct + texte, 3. lecteur de texte en repli.
@@ -234,6 +234,8 @@ def fetch_page(url: str, cfg: dict) -> dict:
                 continue
 
     for attempt in range(2):
+        if not allow_text:
+            break
         try:
             r = requests.get("https://r.jina.ai/" + url, timeout=60)
             r.raise_for_status()
@@ -491,15 +493,34 @@ def check_once() -> int:
         record["name"] = name
         record["url"] = url
 
+        scraper_key = os.environ.get("SCRAPER_API_KEY")
+        throttled = False
         if product.get("manual"):
-            last = record["points"][-1] if record["points"] else None
-            if last and last.get("price") is not None:
-                digest_rows.append(f"• {name} : {money(last['price'])} (manuel)")
-            log(f"{pid}: saisie manuelle, pas de lecture automatique")
-            continue
+            if not product.get("scraper") or not scraper_key:
+                last = record["points"][-1] if record["points"] else None
+                if last and last.get("price") is not None:
+                    digest_rows.append(f"• {name} : {money(last['price'])} (manuel)")
+                log(f"{pid}: saisie manuelle, pas de lecture automatique")
+                continue
+            min_hours = float(settings.get("scraper_min_hours", 12))
+            last_auto = record.get("last_auto_at")
+            if last_auto:
+                try:
+                    age = (now - datetime.fromisoformat(last_auto)).total_seconds() / 3600
+                except ValueError:
+                    age = min_hours + 1
+                if age < min_hours:
+                    throttled = True
+            if throttled:
+                last = record["points"][-1] if record["points"] else None
+                if last and last.get("price") is not None:
+                    digest_rows.append(f"• {name} : {money(last['price'])} (auto 2×/j)")
+                log(f"{pid}: quota scraping atteint (prochaine lecture dans {min_hours:.0f} h)")
+                continue
+            record["last_auto_at"] = stamp
 
         try:
-            page = fetch_page(url, product)
+            page = fetch_page(url, product, allow_text=not product.get("scraper"))
             soup, text = page["soup"], page["text"]
             pnode, offer, fallback = pick_offer(jsonld_products(soup), product, url)
             if offer and to_float(offer.get("price")) is not None:

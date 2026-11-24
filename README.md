@@ -77,7 +77,8 @@ Codes promo détectés au passage : `BF15`, `FITUEYES05` (FITUEYES), `MIX30` (Jo
 ## Limitations honnêtes
 
 - **Maisons du Monde** est protégé par DataDome : curl, navigateur headless, proxies et lecteur de texte sont tous bloqués. Le produit est donc marqué `"manual": true` : `watch.py` ne tente plus de le lire (plus d'alerte `❌`), et le prix se saisit dans la liste (`liste.command` → champ « prix € » + Enregistrer). Le prix saisi entre dans l'historique, les graphiques et le plus bas/plus haut.
-- **Automatiser MDM** : ajoute une clé de service de scraping gratuit (ScraperAPI, ScrapingBee…) dans le secret GitHub `SCRAPER_API_KEY`. `watch.py` l'utilise automatiquement pour les sites bloqués, puis retire `"manual": true` de l'entrée.
+- **Automatiser les sites bloqués** : ajoute une clé ScraperAPI dans le secret GitHub `SCRAPER_API_KEY` (et localement dans `~/.config/price-watch/scraper.env`). Les produits marqués `manual` + `scraper` sont alors vérifiés automatiquement, mais **limités à 2 fois par jour** (`scraper_min_hours: 12`) pour rester dans le quota gratuit (~1 000 crédits/mois). Sans clé, ils restent en saisie manuelle.
+- Produits concernés par ce quota : **Maisons du Monde — Griffith**, les **8 produits Zara** et les **5 produits La Redoute** (14 au total). Les autres produits ne consomment aucun crédit.
 - La stratégie est : JSON-LD direct → lecteur de texte public (`r.jina.ai`) en repli. Cela contourne la plupart des 403/429.
 - Les **codes promo** ne sont pas toujours dans le HTML : la détection couvre les prix barrés et les motifs `code / coupon / kortingscode`. Pour une couverture complète, une extension type Honey reste imbattable.
 - Les prix Emma sont ceux des matelas individuels (SKU de la sélection), pas forcément le total du pack affiché sur la page.
