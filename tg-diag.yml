@@ -1,0 +1,58 @@
+name: Diagnostic Telegram (temporaire)
+
+on:
+  push:
+    paths:
+      - tg-diag.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Résoudre les chats candidats
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, os, requests
+          token = os.environ.get("TG_TOKEN", "")
+          base = f"https://api.telegram.org/bot{token}"
+          out = {"try": [], "updates": []}
+          for name in ["FolioPrix", "folio_prix", "folioprix", "Folio_Prix", "FolioPrixGroup", "FolioPrixBot"]:
+              try:
+                  r = requests.get(base + "/getChat", params={"chat_id": "@" + name}, timeout=15)
+                  j = r.json()
+                  result = j.get("result") or {}
+                  out["try"].append({"name": name, "ok": j.get("ok"), "id": result.get("id"),
+                                     "title": result.get("title"), "type": result.get("type"),
+                                     "username": result.get("username"),
+                                     "desc": j.get("description", "")[:100]})
+              except Exception as e:
+                  out["try"].append({"name": name, "error": str(e)[:100]})
+          try:
+              j = requests.get(base + "/getUpdates", params={"limit": 50}, timeout=15).json()
+              for u in j.get("result", []):
+                  m = u.get("message") or u.get("my_chat_member") or u.get("edited_message") or {}
+                  c = m.get("chat") or {}
+                  if c:
+                      out["updates"].append({"id": c.get("id"), "type": c.get("type"),
+                                             "title": c.get("title"), "username": c.get("username")})
+          except Exception as e:
+              out["updates_error"] = str(e)[:100]
+          with open("tg-diag-result.json", "w") as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+          print(json.dumps(out, ensure_ascii=False, indent=2))
+          PY
+      - name: Publier le résultat
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: tg diagnostic result"
+          file_pattern: tg-diag-result.json
