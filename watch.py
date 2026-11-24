@@ -290,6 +290,12 @@ def text_price(text: str, cfg: dict) -> float | None:
     return None
 
 
+STOP_CODES = {
+    "COUPON", "PROMO", "POSTAL", "LIVRAISON", "GRATUIT", "GRATUITE",
+    "CADEAU", "CODE", "NOEL", "SOLDES",
+}
+
+
 def promo_from_text(text: str) -> list[str]:
     codes: list[str] = []
     patterns = [
@@ -301,7 +307,7 @@ def promo_from_text(text: str) -> list[str]:
     for pattern in patterns:
         for m in re.finditer(pattern, text[:20000], re.I):
             code = m.group(1).upper()
-            if code not in ("COUPON", "PROMO") and code not in codes:
+            if code not in STOP_CODES and code not in codes:
                 codes.append(code)
     return [f"code {c}" for c in codes[:5]]
 
@@ -393,7 +399,7 @@ def promo_hints(soup: BeautifulSoup, offer: dict, product: dict) -> list[str]:
         text,
         re.I,
     )
-    if m:
+    if m and m.group(2).upper() not in STOP_CODES:
         hints.append(f"code? {m.group(2)}")
     return sorted(set(hints))
 
