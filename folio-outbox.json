@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261124T152247",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n🔴 📉 *CLS* -5,1 % sur 24 h (≥ 5 %)\n   -0,52 € · Celestica\n\nPortefeuille : -1,3 % (-102,69 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-24T15:20:02.292Z",
   "chat_id": "9261328582"
 }
