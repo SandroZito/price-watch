@@ -59,13 +59,15 @@ def money(value: float | None) -> str:
 
 
 def load_credentials() -> None:
-    """Charge les identifiants Telegram depuis un fichier local en dehors du repo."""
-    if not CREDENTIALS_FILE.exists():
-        return
-    for line in CREDENTIALS_FILE.read_text(encoding="utf-8").splitlines():
-        if "=" in line and not line.strip().startswith("#"):
-            key, value = line.split("=", 1)
-            os.environ.setdefault(key.strip(), value.strip())
+    """Charge les secrets locaux (Telegram, ScraperAPI) depuis ~/.config/price-watch."""
+    files = [CREDENTIALS_FILE, CREDENTIALS_FILE.parent / "scraper.env"]
+    for path in files:
+        if not path.exists():
+            continue
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if "=" in line and not line.strip().startswith("#"):
+                key, value = line.split("=", 1)
+                os.environ.setdefault(key.strip(), value.strip())
 
 
 def load_config() -> dict:
@@ -207,27 +209,29 @@ def fetch_page(url: str, cfg: dict) -> dict:
         if attempt == 0:
             time.sleep(1)
 
-    # Repli optionnel : API de scraping (contourne DataDome) si une clé est fournie.
+    # Repli optionnel : API de scraping (contourne DataDome/Cloudflare) si clé fournie.
     scraper_key = os.environ.get("SCRAPER_API_KEY")
     if scraper_key:
-        try:
-            rs = requests.get(
-                "https://api.scraperapi.com",
-                params={"api_key": scraper_key, "url": url, "country_code": "be"},
-                timeout=70,
-            )
-            if rs.ok and len(rs.text) > 2000:
+        for render in (False, True):
+            try:
+                params = {"api_key": scraper_key, "url": url, "country_code": "be"}
+                if render:
+                    params["render"] = "true"
+                rs = requests.get("https://api.scraperapi.com", params=params, timeout=90)
+                if not rs.ok or len(rs.text) < 500:
+                    continue
                 soup_s = BeautifulSoup(rs.text, "html.parser")
-                if jsonld_products(soup_s):
+                meta_s = meta_offer(soup_s)
+                if jsonld_products(soup_s) or meta_s:
                     return {
                         "soup": soup_s,
                         "text": soup_s.get_text(" ", strip=True),
-                        "source": "scraper",
+                        "source": "scraper" + ("+render" if render else ""),
                         "price_hint": None,
-                        "offer_hint": None,
+                        "offer_hint": meta_s,
                     }
-        except requests.RequestException:
-            pass
+            except requests.RequestException:
+                continue
 
     for attempt in range(2):
         try:
