@@ -8,6 +8,7 @@ Surveille 16 products toutes les heures, détecte les baisses, les promos et les
 - `watch.py` : lit le **JSON-LD** de chaque page (la source la plus fiable), compare à l'historique, envoie les alertes Telegram.
 - `history.json` : prix + promos + disponibilité par passage (généré automatiquement, max 240 points par produit).
 - `.github/workflows/hourly.yml` : exécution **dans le cloud** toutes les heures, même quand ton Mac est éteint.
+- `watch.py` : chaque run effectue **3 vérifications espacées de 20 minutes** (`WATCH_ROUNDS` / `WATCH_INTERVAL_MIN`), soit un contrôle des prix toutes les **20 minutes**. Le cron reste horaire car le credential local n'a pas le scope `workflow` pour modifier `hourly.yml`.
 
 GitHub Actions est gratuit pour ce volume (≈ 360 min/mois, bien sous les 2000 min du palier gratuit ; illimité pour un repo public).
 
