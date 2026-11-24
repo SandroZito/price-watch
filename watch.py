@@ -301,43 +301,6 @@ def main() -> int:
     load_credentials()
     cfg = load_config()
     history = load_history()
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    if token:
-        try:
-            j = requests.get(
-                f"https://api.telegram.org/bot{token}/getUpdates",
-                params={"limit": 50}, timeout=20,
-            ).json()
-            chats = []
-            for u in j.get("result", []):
-                m = u.get("message") or u.get("my_chat_member") or u.get("edited_message") or {}
-                c = m.get("chat") or {}
-                if c:
-                    chats.append({
-                        "id": c.get("id"), "type": c.get("type"),
-                        "title": c.get("title"), "username": c.get("username"),
-                        "first_name": c.get("first_name"),
-                    })
-            seen, unique = set(), []
-            for c in chats:
-                if c["id"] not in seen:
-                    seen.add(c["id"]); unique.append(c)
-            history["_tg_diag"] = {
-                "chat_count": len(unique), "chats": unique,
-                "update_count": len(j.get("result", [])),
-                "raw": str(j)[:600],
-            }
-            try:
-                t = requests.post(
-                    f"https://api.telegram.org/bot{token}/sendMessage",
-                    data={"chat_id": "9261328582", "text": "Test intégration Folio Prix"},
-                    timeout=20,
-                ).json()
-                history["_tg_diag"]["send_test"] = {"ok": t.get("ok"), "desc": t.get("description", "")[:100]}
-            except Exception as e:
-                history["_tg_diag"]["send_test"] = {"error": str(e)[:100]}
-        except Exception as e:
-            history["_tg_diag"] = [{"error": str(e)[:120]}]
     settings = cfg.get("settings", {})
     report_mode = os.environ.get("REPORT_MODE", settings.get("report_mode", "changes"))
     digest_hour = int(os.environ.get("DIGEST_HOUR_UTC", settings.get("digest_hour_utc", 8)))
