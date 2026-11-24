@@ -297,7 +297,7 @@ def telegram(text: str) -> None:
             log(f"Telegram indisponible: {e}")
 
 
-def main() -> int:
+def check_once() -> int:
     load_credentials()
     cfg = load_config()
     history = load_history()
@@ -408,6 +408,18 @@ def main() -> int:
 
     log(f"Termine : {len(cfg['products'])} produits, {alerts} evenements")
     return 0
+
+
+def main() -> int:
+    """3 vérifications par run horaire => un contrôle toutes les 20 minutes."""
+    rounds = int(os.environ.get("WATCH_ROUNDS", "3"))
+    interval = int(os.environ.get("WATCH_INTERVAL_MIN", "20"))
+    codes = []
+    for i in range(rounds):
+        if i:
+            time.sleep(interval * 60)
+        codes.append(check_once())
+    return max(codes) if codes else 0
 
 
 if __name__ == "__main__":
