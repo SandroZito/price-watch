@@ -155,6 +155,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 125.0,
@@ -324,6 +332,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 218.0,
@@ -425,6 +441,11 @@
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
           "price": null,
           "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         }
@@ -610,6 +631,16 @@
             "code BWTUE"
           ],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [
+            "code BWTUE"
+          ],
+          "source": "direct-texte"
         }
       ],
       "lowest": 47.3,
@@ -759,6 +790,14 @@
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
+          "price": 69.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
           "price": 69.99,
           "currency": "EUR",
           "availability": "inconnue",
@@ -924,6 +963,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 880.05,
@@ -1079,6 +1126,14 @@
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
           "price": 200.0,
           "currency": "EUR",
           "availability": "",
@@ -1244,6 +1299,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 169.99,
@@ -1399,6 +1462,14 @@
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
           "price": 300.0,
           "currency": "EUR",
           "availability": "",
@@ -1564,6 +1635,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 261.95,
@@ -1724,6 +1803,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 1556.0,
@@ -1875,6 +1962,14 @@
           "availability": "inconnue",
           "promo": [],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
         }
       ],
       "lowest": 151.99,
@@ -2021,6 +2116,14 @@
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
           "price": 118.99,
           "currency": "EUR",
           "availability": "inconnue",
@@ -2186,6 +2289,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 40.95,
@@ -2341,6 +2452,14 @@
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
           "price": 649.95,
           "currency": "EUR",
           "availability": "InStock",
@@ -2506,11 +2625,75 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T08:33:47+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 829.95,
       "lowest_at": "2026-11-20T13:53:06+00:00"
     }
   },
-  "last_digest": "2026-11-23"
+  "last_digest": "2026-11-24",
+  "_tg_diag": [
+    {
+      "name": "FolioPrix",
+      "ok": false,
+      "id": null,
+      "title": null,
+      "type": null,
+      "username": null,
+      "desc": "Bad Request: chat not found"
+    },
+    {
+      "name": "folio_prix",
+      "ok": false,
+      "id": null,
+      "title": null,
+      "type": null,
+      "username": null,
+      "desc": "Bad Request: chat not found"
+    },
+    {
+      "name": "folioprix",
+      "ok": false,
+      "id": null,
+      "title": null,
+      "type": null,
+      "username": null,
+      "desc": "Bad Request: chat not found"
+    },
+    {
+      "name": "Folio_Prix",
+      "ok": false,
+      "id": null,
+      "title": null,
+      "type": null,
+      "username": null,
+      "desc": "Bad Request: chat not found"
+    },
+    {
+      "name": "FolioPrixGroup",
+      "ok": false,
+      "id": null,
+      "title": null,
+      "type": null,
+      "username": null,
+      "desc": "Bad Request: chat not found"
+    },
+    {
+      "name": "FolioPrixBot",
+      "ok": true,
+      "id": 9212118432,
+      "title": null,
+      "type": "private",
+      "username": "FolioPrixBot",
+      "desc": ""
+    }
+  ]
 }
