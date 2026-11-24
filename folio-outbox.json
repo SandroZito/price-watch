@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261124T151948",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n🔴 📉 *SOL* -5,1 % sur 24 h (≥ 5 %)\n   -6,40 € · Solana\n\nPortefeuille : -1,2 % (-92,14 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-24T13:26:01.479Z",
   "chat_id": "9261328582"
 }
