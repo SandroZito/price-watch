@@ -166,7 +166,7 @@ function render(){
         <div class="name"><a class="link" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
           ${p.source === '' ? '<span class="badge na">illisible</span>' : ''}</div>
         <div class="meta">${esc(new URL(p.url).hostname)}${p.variant ? ' · variante ' + esc(p.variant) : ''}
-          ${p.manual ? '<span class="badge na" title="Site protégé : prix saisi à la main">manuel</span>' : ''}
+          ${p.manual ? `<span class="badge na" title="Site protégé : prix saisi à la main${p.auto ? ', vérification auto 2×/jour avec ScraperAPI' : ''}">${p.auto ? 'manuel · auto 2×/j' : 'manuel'}</span>` : ''}
           ${p.stock === 'rupture' ? '<span class="stock out">rupture</span>' : ''}
           ${p.stock === 'précommande' ? '<span class="stock pre">précommande</span>' : ''}
           ${p.stock === 'en stock' ? '<span class="stock in">en stock</span>' : ''}
