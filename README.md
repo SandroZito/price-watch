@@ -81,7 +81,7 @@ Codes promo détectés au passage : `BF15`, `FITUEYES05` (FITUEYES), `MIX30` (Jo
   - **Zara (8)** : mode `render`, **2×/jour** (~10 crédits/requête) ;
   - **La Redoute (5)** : mode `premium`, **1×/jour** (~25-35 crédits/requête) ;
   - **Maisons du Monde (1)** : reste **manuel** — ScraperAPI est bloqué même en `ultra_premium`.
-- Le plan gratuit ScraperAPI offre ~5 000 crédits (essai). À ce rythme (~335 crédits/jour), il dure ~2 semaines. Au-delà : réduire la fréquence, retirer des produits, ou prendre un plan payant.
+- **Essai ScraperAPI** : 5 000 crédits jusqu'au **01/12/2026**. Ensuite le plan gratuit repasse à **1 000 crédits/mois**. `watch.py` bascule donc automatiquement, à partir de cette date, les 13 produits bloqués à **une passe tous les 8 jours** (`scraper_trial_until` / `scraper_after_hours` dans `products.json`), ce qui tient dans le quota (~956 crédits/mois).
 - Les autres produits (IKEA, RÅM, home24, Jotex, SKLUM, Emma…) ne consomment **aucun crédit**.
 - La stratégie est : JSON-LD direct → lecteur de texte public (`r.jina.ai`) en repli. Cela contourne la plupart des 403/429.
 - Les **codes promo** ne sont pas toujours dans le HTML : la détection couvre les prix barrés et les motifs `code / coupon / kortingscode`. Pour une couverture complète, une extension type Honey reste imbattable.

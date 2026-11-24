@@ -535,7 +535,12 @@ def check_once() -> int:
                     digest_rows.append(f"• {name} : {money(last['price'])} (manuel)")
                 log(f"{pid}: saisie manuelle, pas de lecture automatique")
                 continue
-            min_hours = float(product.get("scraper_min_hours", settings.get("scraper_min_hours", 12)))
+            trial_until = settings.get("scraper_trial_until")
+            if trial_until and today >= str(trial_until):
+                # Après l'essai ScraperAPI : ~1 000 crédits/mois => 1 passe / 8 jours.
+                min_hours = float(settings.get("scraper_after_hours", 192))
+            else:
+                min_hours = float(product.get("scraper_min_hours", settings.get("scraper_min_hours", 12)))
             last_auto = record.get("last_auto_at")
             if last_auto:
                 try:

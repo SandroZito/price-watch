@@ -55,6 +55,14 @@ def stock_label(raw) -> str:
     return "inconnue"
 
 
+def auto_label(product: dict, settings: dict) -> str:
+    trial_until = settings.get("scraper_trial_until")
+    today = datetime.now(timezone.utc).date().isoformat()
+    if trial_until and today >= str(trial_until):
+        return "1×/8j"
+    return "2×/j" if float(product.get("scraper_min_hours", 12)) <= 12 else "1×/j"
+
+
 def rows() -> list[dict]:
     cfg = read_json(PRODUCTS, {"settings": {}, "products": []})
     hist = read_json(HISTORY, {"products": {}})
@@ -86,7 +94,7 @@ def rows() -> list[dict]:
             "source": pts[-1].get("source", "") if pts else "",
             "manual": bool(p.get("manual")),
             "auto": bool(p.get("scraper")),
-            "auto_label": "2×/j" if float(p.get("scraper_min_hours", 12)) <= 12 else "1×/j",
+            "auto_label": auto_label(p, cfg.get("settings", {})),
             "manual_at": (pts[-1].get("t", "")[:10] if p.get("manual") and pts else ""),
             "stock": (pts[-1].get("stock") or stock_label(pts[-1].get("availability"))) if pts else "inconnue",
         })

@@ -2,7 +2,9 @@
   "settings": {
     "digest_hour_utc": 8,
     "report_mode": "changes",
-    "scraper_min_hours": 12
+    "scraper_min_hours": 12,
+    "scraper_trial_until": "2026-12-01",
+    "scraper_after_hours": 192
   },
   "products": [
     {
