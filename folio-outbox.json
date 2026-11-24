@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261124T132548",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n📉 *LSMC* -5,5 % sur 24 h (≥ 5 %)\n   -8,68 € · Amundi MSCI Semiconductors UCITS ETF\n\nPortefeuille : -0,5 % (-41,86 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-23T23:05:28.932Z",
   "chat_id": "9261328582"
 }
