@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liste des produits suivis</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --card:#fff; --ink:#1c1b19; --muted:#7d786f;
+    --line:#e9e5de; --accent:#b4532a; --accent-soft:#f7ece6;
+    --good:#2f7a4d; --bad:#b42318;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:36px 22px 60px}
+  h1{font-size:24px;letter-spacing:-.4px;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 24px;font-size:13px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    box-shadow:0 2px 10px rgba(30,25,20,.04);overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.7px;
+    color:var(--muted);font-weight:600;padding:12px 16px;background:#faf8f5;border-bottom:1px solid var(--line)}
+  td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#fdfcfa}
+  .name{font-weight:600;font-size:13.5px}
+  .meta{font-size:11px;color:var(--muted);margin-top:2px}
+  a{color:inherit;text-decoration:none}
+  a.link{color:var(--accent)}
+  a.link:hover{text-decoration:underline}
+  .price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+  .low{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12.5px;white-space:nowrap}
+  .badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;
+    background:var(--accent-soft);color:var(--accent);font-weight:600;margin-left:6px}
+  .badge.na{background:#f2f0ec;color:var(--muted)}
+  .del{background:none;border:1px solid var(--line);border-radius:8px;color:var(--muted);
+    width:30px;height:30px;cursor:pointer;font-size:16px;line-height:1}
+  .del:hover{border-color:var(--bad);color:var(--bad);background:#fdf2f0}
+  .del:disabled,.add:disabled{opacity:.45;cursor:not-allowed}
+  .addbar{display:grid;grid-template-columns:1fr 190px 150px auto;gap:8px;margin-top:16px}
+  input{padding:11px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#fff}
+  input:focus{outline:2px solid var(--accent-soft);border-color:var(--accent)}
+  .add{background:var(--accent);color:#fff;border:0;border-radius:9px;padding:0 18px;
+    font:inherit;font-weight:600;cursor:pointer}
+  .add:hover{background:#9c4523}
+  .status{margin:14px 0 0;font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--good);display:inline-block}
+  .dot.warn{background:#d99a2b}
+  .sync{background:none;border:1px solid var(--line);border-radius:7px;cursor:pointer;
+    font-size:11px;padding:3px 9px;color:var(--accent)}
+  .sync:hover{border-color:var(--accent)}
+  .note{margin-top:28px;padding:14px 16px;background:#faf8f5;border:1px solid var(--line);
+    border-radius:10px;font-size:12px;color:var(--muted)}
+  .note code{background:#fff;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:11px}
+  @media(max-width:680px){.addbar{grid-template-columns:1fr}.price,.low{text-align:right}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📋 Liste des produits suivis</h1>
+  <p class="sub"><span id="count">—</span> produits · la liste pilote le suivi des prix et les alertes Telegram</p>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Produit</th><th style="text-align:right">Dernier prix</th><th style="text-align:right">Plus bas</th><th></th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <div class="addbar">
+    <input id="url" placeholder="Coller une URL de produit…">
+    <input id="name" placeholder="Nom (optionnel)">
+    <input id="variant" placeholder="Variante (optionnelle)">
+    <button class="add" id="add">+ Ajouter</button>
+  </div>
+
+  <p class="status"><span class="dot" id="dot"></span><span id="status">Chargement…</span>
+    <button class="sync" id="sync" style="display:none">Synchroniser</button></p>
+
+  <div class="note">
+    Pour activer <strong>Ajouter</strong> et <strong>✕ Retirer</strong>, double-clique sur
+    <code>liste.command</code> dans le dossier <code>price-watch</code>. Le serveur s'éteint à la fermeture
+    de la fenêtre Terminal — le suivi des prix, lui, continue dans le cloud.
+  </div>
+</div>
+
+<script id="seed" type="application/json">[{"id":"leenbakker-irene-noyer","name":"Leen Bakker — Table Irene noyer extensible","url":"https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-manger/table-de-salle-a-manger-irene-couleur-noyer-extensible","last":389.4,"low":389.4,"variant":"noyer","detected":"Leen Bakker — Table Irene noyer extensible","source":"direct"},{"id":"lumz-kare-dollar","name":"LUMZ — Tabouret Kare Design Dollar","url":"https://www.lumz.be/tafels/bijzettafels/kare-design-stool-ludieke-krukje","last":125.0,"low":125.0,"variant":"","detected":"LUMZ — Tabouret Kare Design Dollar","source":"direct"},{"id":"mdm-griffith","name":"Maisons du Monde — Étagère Griffith","url":"https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm","last":null,"low":null,"variant":"","detected":"Maisons du Monde — Étagère Griffith","source":""},{"id":"sweeek-lennox-bordeaux","name":"sweeek — Étagère Lennox bordeaux","url":"https://fr.sweeek.be/product/etagere-metal-et-decor-bois-2-portes-bordeaux","last":169.99,"low":169.99,"variant":"","detected":"sweeek — Étagère Lennox bordeaux","source":"direct"},{"id":"ram-lura5","name":"RÅM — Table basse LURA_5 aluminium 100 cm","url":"https://www.raamint.com/fr/products/lura_5-table-basse-en-aluminium-100-cm","last":261.95,"low":261.95,"variant":"2008","detected":"RÅM — Table basse LURA_5 aluminium 100 cm","source":"direct"},{"id":"fitueyes-picasso","name":"FITUEYES — Support TV Picasso (Walnut / With)","url":"https://eu.fitueyes.com/products/picasso-serie-%e2%84%a2-tv-stand-for-32-65-inches?variant=50272563593482","last":218.0,"low":218.0,"variant":"50272563593482","detected":"FITUEYES — Support TV Picasso (Walnut / With)","source":"direct"},{"id":"home24-hossa","name":"home24 — Chaises Hossa lot de 2","url":"https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitation-cuir-fer-noir-noyer","last":118.99,"low":118.99,"variant":"","detected":"home24 — Chaises Hossa lot de 2","source":"texte"},{"id":"jotex-irma","name":"Jotex — Tapis Irma 2212904-03","url":"https://www.jotex.be/irma-tapijt/2212904-03","last":47.3,"low":47.3,"variant":"","detected":"Jotex — Tapis Irma 2212904-03","source":"direct-texte"},{"id":"vidaxl-pouf-noir","name":"vidaXL — Pouf cuir de chèvre noir 60x60x30","url":"https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-veritable-de-chevre/8719883562636.html","last":155.99,"low":151.99,"variant":"Noir","detected":"vidaXL — Pouf cuir de chèvre noir 60x60x30","source":"direct-texte"},{"id":"jysk-marstrand","name":"JYSK — Table MARSTRAND Ø110/110x200 chêne","url":"https://jysk.be/fr/salle-manger/tables-manger/table-marstrand-o110-110x200-chene-naturel?article=3640235","last":300.0,"low":300.0,"variant":"Ø110/110x200","detected":"JYSK — Table MARSTRAND Ø110/110x200 chêne","source":"direct"},{"id":"sklum-montana","name":"SKLUM — Table extensible Montana 120-160","url":"https://www.sklum.com/fr/acheter-tables-salle-a-manger/206144-table-a-manger-ronde-extensible-120-160x120-cm-en-mdf-et-placage-chene-montana.html","last":649.95,"low":649.95,"variant":"Bois Naturel","detected":"SKLUM — Table extensible Montana 120-160","source":"direct"},{"id":"themasie-beca","name":"The Masie — Table ronde extensible Beca","url":"https://www.themasie.com/fr/acheter-tableaux-extensibles/228667-table-de-salle-a-manger-ronde-extensible-en-metal-o120-240x120-cm-beca.html?id_c=679446","last":829.95,"low":829.95,"variant":"","detected":"The Masie — Table ronde extensible Beca","source":"direct"},{"id":"sklum-alicia","name":"SKLUM — Suspension fer Alicia","url":"https://www.sklum.com/fr/acheter-suspension/148555-suspension-en-fer-alicia.html?id_c=466845","last":40.95,"low":40.95,"variant":"","detected":"SKLUM — Suspension fer Alicia","source":"direct"},{"id":"emma-original-160x200","name":"Emma — Matelas Original 160x200 (Super Deal)","url":"https://www.emma-matelas.be/ensembles/super-deal-original/?selection=EMAHE160200AAC:1,ESSES160200AAE:1,EPWCF040070RAB:2,EDVSF240220AAA:1","last":880.05,"low":880.05,"variant":"EMAHE160200AAC","detected":"Emma — Matelas Original 160x200 (Super Deal)","source":"direct"},{"id":"emma-original-plus-160x200","name":"Emma — Matelas Original+ 160x200 (Super Deal Plus)","url":"https://www.emma-matelas.be/ensembles/super-deal-plus-original-plus/?selection=EMAHE160200ATE:1,EPWCF040070RAB:2,EDVLD200200AAA:1","last":1556.0,"low":1556.0,"variant":"EMAHE160200ATE","detected":"Emma — Matelas Original+ 160x200 (Super Deal Plus)","source":"direct"},{"id":"jysk-ellinge-160","name":"JYSK — Cadre de lit ELLINGE 160x200 rangement","url":"https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement","last":200.0,"low":200.0,"variant":"160x200 a/rangement","detected":"JYSK — Cadre de lit ELLINGE 160x200 rangement","source":"direct"}]</script>
+<script>
+const seed = JSON.parse(document.getElementById('seed').textContent);
+let rows = seed, live = false;
+
+const money = v => v == null ? '—' : new Intl.NumberFormat('fr-BE',{style:'currency',currency:'EUR'}).format(v);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function render(){
+  document.getElementById('count').textContent = rows.length;
+  document.getElementById('rows').innerHTML = rows.map(p => `
+    <tr>
+      <td>
+        <div class="name"><a class="link" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
+          ${p.source === '' ? '<span class="badge na">illisible</span>' : ''}</div>
+        <div class="meta">${esc(new URL(p.url).hostname)}${p.variant ? ' · variante ' + esc(p.variant) : ''}</div>
+      </td>
+      <td class="price" style="text-align:right">${money(p.last)}</td>
+      <td class="low" style="text-align:right">${money(p.low)}</td>
+      <td style="text-align:right"><button class="del" data-id="${esc(p.id)}" ${live?'':'disabled'} title="Retirer">✕</button></td>
+    </tr>`).join('');
+  document.querySelectorAll('.del').forEach(b => b.onclick = () => remove(b.dataset.id));
+}
+
+async function api(path, body){
+  const r = await fetch(path, body ? {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)} : {});
+  if(!r.ok) throw new Error((await r.text()).slice(0,200));
+  return r.json();
+}
+
+async function refresh(){
+  try{
+    const d = await api('/api/liste');
+    rows = d.rows; live = true;
+    document.getElementById('dot').className = 'dot';
+    document.getElementById('status').textContent = d.synced ? 'Synchronisé avec GitHub' : '⚠️ Modifications non synchronisées';
+    document.getElementById('sync').style.display = d.synced ? 'none' : 'inline-block';
+    document.getElementById('add').disabled = false;
+  }catch(e){
+    live = false;
+    document.getElementById('add').disabled = true;
+    document.getElementById('dot').className = 'dot warn';
+    document.getElementById('status').textContent = 'Aperçu hors-ligne — lance liste.command pour modifier';
+  }
+  render();
+}
+
+async function add(){
+  const url = document.getElementById('url').value.trim();
+  if(!url){ alert('Colle une URL.'); return; }
+  const btn = document.getElementById('add'); btn.disabled = true;
+  try{
+    const d = await api('/api/ajouter', {
+      url, name: document.getElementById('name').value.trim(),
+      variant: document.getElementById('variant').value.trim()
+    });
+    rows = d.rows;
+    document.getElementById('url').value = document.getElementById('name').value = document.getElementById('variant').value = '';
+    document.getElementById('status').textContent = d.message;
+    render();
+  }catch(e){ alert('Ajout impossible : ' + e.message); }
+  finally{ btn.disabled = false; }
+}
+
+async function remove(id){
+  if(!confirm('Retirer ce produit du suivi ?')) return;
+  try{
+    const d = await api('/api/retirer',{id});
+    rows = d.rows;
+    document.getElementById('status').textContent = d.message;
+    render();
+  }catch(e){ alert('Retrait impossible : ' + e.message); }
+}
+
+document.getElementById('add').onclick = add;
+document.getElementById('sync').onclick = async () => {
+  try{ const d = await api('/api/sync',{}); document.getElementById('status').textContent = d.message; await refresh(); }
+  catch(e){ alert('Synchronisation impossible : ' + e.message); }
+};
+refresh();
+</script>
+</body>
+</html>
