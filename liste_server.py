@@ -42,6 +42,19 @@ def write_products(cfg: dict) -> None:
         f.write("\n")
 
 
+def stock_label(raw) -> str:
+    key = str(raw or "").lower()
+    for needle, label in (
+        ("instock", "en stock"), ("in_store", "en stock"), ("limited", "stock limité"),
+        ("preorder", "précommande"), ("backorder", "précommande"),
+        ("outofstock", "rupture"), ("soldout", "rupture"), ("rupture", "rupture"),
+        ("en stock", "en stock"), ("précommande", "précommande"),
+    ):
+        if needle in key:
+            return label
+    return "inconnue"
+
+
 def rows() -> list[dict]:
     cfg = read_json(PRODUCTS, {"settings": {}, "products": []})
     hist = read_json(HISTORY, {"products": {}})
@@ -73,6 +86,7 @@ def rows() -> list[dict]:
             "source": pts[-1].get("source", "") if pts else "",
             "manual": bool(p.get("manual")),
             "manual_at": (pts[-1].get("t", "")[:10] if p.get("manual") and pts else ""),
+            "stock": (pts[-1].get("stock") or stock_label(pts[-1].get("availability"))) if pts else "inconnue",
         })
     return out
 
