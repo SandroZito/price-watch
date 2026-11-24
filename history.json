@@ -490,10 +490,19 @@
           "t": "2026-11-24T08:47:53+00:00",
           "price": null,
           "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
+        },
+        {
+          "t": "2026-11-24T16:07:02+00:00",
+          "price": 399.2,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "manuel"
         }
       ],
-      "lowest": null,
-      "lowest_at": null
+      "lowest": 399.2,
+      "lowest_at": "2026-11-24T16:07:02+00:00",
+      "highest": 399.2
     },
     "jotex-irma": {
       "name": "Jotex — Tapis Irma 2212904-03",
