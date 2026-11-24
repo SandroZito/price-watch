@@ -95,6 +95,11 @@
       "name": "JYSK — Cadre de lit ELLINGE 160x200 rangement",
       "url": "https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement",
       "variant_match": "160x200 a/rangement"
+    },
+    {
+      "id": "example",
+      "name": "TEST ajout",
+      "url": "https://example.com/produit-test"
     }
   ]
 }
