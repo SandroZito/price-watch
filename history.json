@@ -187,6 +187,24 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 125.0,
@@ -387,6 +405,30 @@
           "price": 218.0,
           "currency": "EUR",
           "availability": "inconnue",
+          "promo": [
+            "code BF15",
+            "code FITUEYES05"
+          ],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [
+            "code BF15",
+            "code FITUEYES05"
+          ],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
           "promo": [
             "code BF15",
             "code FITUEYES05"
@@ -743,6 +785,28 @@
             "code BWTUE"
           ],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [
+            "code BWTUE"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BWTUE"
+          ],
+          "source": "direct-meta"
         }
       ],
       "lowest": 47.3,
@@ -912,6 +976,24 @@
           "price": 389.4,
           "currency": "EUR",
           "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
           "promo": [],
           "source": "direct"
         }
@@ -1107,6 +1189,24 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 880.05,
@@ -1298,6 +1398,24 @@
           "price": 200.0,
           "currency": "EUR",
           "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
           "promo": [],
           "source": "direct"
         }
@@ -1493,6 +1611,24 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 169.99,
@@ -1684,6 +1820,24 @@
           "price": 300.0,
           "currency": "EUR",
           "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
           "promo": [],
           "source": "direct"
         }
@@ -1879,6 +2033,24 @@
           "availability": "inconnue",
           "promo": [],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "rupture",
+          "stock": "rupture",
+          "promo": [],
+          "source": "texte"
         }
       ],
       "lowest": 261.95,
@@ -2072,6 +2244,24 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 1556.0,
@@ -2256,6 +2446,24 @@
           "availability": "inconnue",
           "promo": [],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct-texte"
         }
       ],
       "lowest": 151.99,
@@ -2438,6 +2646,24 @@
           "price": 118.99,
           "currency": "EUR",
           "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
           "promo": [],
           "source": "texte"
         }
@@ -2633,6 +2859,24 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 40.95,
@@ -2824,6 +3068,24 @@
           "price": 649.95,
           "currency": "EUR",
           "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
           "promo": [],
           "source": "direct"
         }
@@ -3019,6 +3281,24 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 829.95,
@@ -3036,11 +3316,205 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 279.0,
       "lowest_at": "2026-11-24T18:34:36+00:00",
       "highest": 279.0
+    },
+    "home24-voksa": {
+      "name": "home24 — Table VOKSA chêne massif",
+      "url": "https://www.home24.be/fr/article/table-en-bois-massif-voksa-chene-massif-chene",
+      "points": [
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 596.7,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 596.7,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "texte"
+        }
+      ],
+      "lowest": 596.7,
+      "lowest_at": "2026-11-24T19:56:55+00:00",
+      "highest": 596.7
+    },
+    "ikea-skansnaes": {
+      "name": "IKEA — Table SKANSNÄS extensible 115/170 cm",
+      "url": "https://www.ikea.com/be/fr/p/skansnaes-table-extensible-brun-hetre-plaque-70563237/",
+      "points": [
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 699.0,
+      "lowest_at": "2026-11-24T19:56:55+00:00",
+      "highest": 699.0
+    },
+    "weba-flaminia": {
+      "name": "Weba — Table ronde Flaminia 120/160×120",
+      "url": "https://www.weba.be/fr/table-ronde-flaminia-120-160x120cm-decor-naturel-130410-003.html",
+      "points": [
+        {
+          "t": "2026-11-24T19:56:55+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [
+            "code POSTAL"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-24T19:58:00+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code POSTAL"
+          ],
+          "source": "direct-meta"
+        }
+      ],
+      "lowest": 399.0,
+      "lowest_at": "2026-11-24T19:56:55+00:00",
+      "highest": 399.0
+    },
+    "zara-tapis-jute": {
+      "name": "Zara — Tapis jute imprimé",
+      "url": "https://www.zara.com/be/fr/tapis-jute-imprime-p42352029.html?v1=545422892",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-plateau-bois": {
+      "name": "Zara — Plateau rectangulaire en bois",
+      "url": "https://www.zara.com/be/fr/plateau-rectangulaire-en-bois-p42279040.html?v1=548891027",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-pimente": {
+      "name": "Zara — Pimente céramique (lot de 2)",
+      "url": "https://www.zara.com/be/fr/pimente-ceramique--lot-de-2--p40302043.html?v1=549615050",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-pincettes": {
+      "name": "Zara — Lot de 4 pincettes à nappe citron",
+      "url": "https://www.zara.com/be/fr/lot-de-4-pincettes-a-nappe-citron-p42267042.html?v1=545422194",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-panneau-cadre": {
+      "name": "Zara — Panneau magnétique cadre en bois",
+      "url": "https://www.zara.com/be/fr/panneau-magnetique-cadre-en-bois-p40247043.html?v1=545401441",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-panneau-lin": {
+      "name": "Zara — Panneau magnétique lin",
+      "url": "https://www.zara.com/be/fr/panneau-magnetique-lin-p44338043.html?v1=545453558",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-panneau-laque": {
+      "name": "Zara — Panneau magnétique laqué",
+      "url": "https://www.zara.com/be/fr/panneau-magnetique-laque-p44348043.html?v1=545453561",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "zara-cadre-photo": {
+      "name": "Zara — Cadre photo bois",
+      "url": "https://www.zara.com/be/fr/cadre-photo-bois-p46343045.html?v1=545436715",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "laredoute-351484364": {
+      "name": "La Redoute — réf. 351484364",
+      "url": "https://www.laredoute.be/ppdp/prod-351484364.aspx?docid=881526",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "laredoute-350323172": {
+      "name": "La Redoute — réf. 350323172",
+      "url": "https://www.laredoute.be/ppdp/prod-350323172.aspx?docid=873026",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "laredoute-324519698": {
+      "name": "La Redoute — réf. 324519698",
+      "url": "https://www.laredoute.be/ppdp/prod-324519698.aspx?docid=873026",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "laredoute-351467868": {
+      "name": "La Redoute — réf. 351467868",
+      "url": "https://www.laredoute.be/ppdp/prod-351467868.aspx",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
+    },
+    "laredoute-350909803": {
+      "name": "La Redoute — réf. 350909803",
+      "url": "https://www.laredoute.be/ppdp/prod-350909803.aspx?dim1=#shoppingtool=treestructureflyout",
+      "points": [],
+      "lowest": null,
+      "lowest_at": null
     }
   },
   "last_digest": "2026-11-24",

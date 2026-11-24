@@ -150,10 +150,16 @@ def fetch_page(url: str, cfg: dict) -> dict:
             soup = BeautifulSoup(r.text, "html.parser")
             text = soup.get_text(" ", strip=True)
             if jsonld_products(soup):
-                return {"soup": soup, "text": text, "source": "direct", "price_hint": None}
+                return {"soup": soup, "text": text, "source": "direct", "price_hint": None,
+                        "offer_hint": None}
+            meta = meta_offer(soup)
+            if meta and meta.get("price") is not None:
+                return {"soup": soup, "text": text, "source": "direct-meta", "price_hint": None,
+                        "offer_hint": meta}
             hint = text_price(text, cfg)
             if hint is not None:
-                return {"soup": soup, "text": text, "source": "direct-texte", "price_hint": hint}
+                return {"soup": soup, "text": text, "source": "direct-texte", "price_hint": hint,
+                        "offer_hint": None}
         except requests.RequestException as e:
             errors.append(f"direct: {type(e).__name__}: {str(e)[:80]}")
         if attempt == 0:
@@ -176,6 +182,7 @@ def fetch_page(url: str, cfg: dict) -> dict:
                         "text": soup_s.get_text(" ", strip=True),
                         "source": "scraper",
                         "price_hint": None,
+                        "offer_hint": None,
                     }
         except requests.RequestException:
             pass
@@ -190,12 +197,69 @@ def fetch_page(url: str, cfg: dict) -> dict:
                 "text": text,
                 "source": "texte",
                 "price_hint": None,
+                "offer_hint": None,
             }
         except requests.RequestException as e:
             errors.append(f"texte: {type(e).__name__}: {str(e)[:80]}")
             if attempt == 0:
                 time.sleep(3)
     raise RuntimeError("; ".join(errors))
+
+
+def meta_offer(soup: BeautifulSoup) -> dict | None:
+    """Prix/dispo dans les balises meta (utile quand il n'y a pas de JSON-LD)."""
+    def content(*names):
+        for name in names:
+            tag = soup.find("meta", attrs={"property": name}) or soup.find("meta", attrs={"name": name})
+            if tag and tag.get("content"):
+                return tag["content"]
+        return None
+
+    price = to_float(content("product:price:amount", "og:price:amount", "product:sale_price:amount"))
+    if price is None:
+        return None
+    availability = content("product:availability", "og:availability") or ""
+    if not availability:
+        m = re.search(
+            r"schema\.org/(InStock|OutOfStock|PreOrder|BackOrder|SoldOut)", str(soup)
+        )
+        if m:
+            availability = m.group(1)
+    return {
+        "price": price,
+        "priceCurrency": content("product:price:currency", "og:price:currency") or "EUR",
+        "availability": availability,
+    }
+
+
+STOCK_LABELS = (
+    ("instock", "en stock"),
+    ("in_stock", "en stock"),
+    ("limitedavailability", "stock limité"),
+    ("onlineonly", "en stock"),
+    ("preorder", "précommande"),
+    ("backorder", "précommande"),
+    ("outofstock", "rupture"),
+    ("out_of_stock", "rupture"),
+    ("soldout", "rupture"),
+)
+
+
+def stock_state(raw) -> str:
+    key = str(raw or "").lower()
+    for needle, label in STOCK_LABELS:
+        if needle in key:
+            return label
+    return "inconnue"
+
+
+def stock_from_text(text: str) -> str:
+    low = text.lower()
+    if any(w in low for w in ("rupture de stock", "épuisé", "epuise", "out of stock", "sold out", "non disponible")):
+        return "rupture"
+    if any(w in low for w in ("en stock", "disponible", "in stock", "ajouter au panier")):
+        return "en stock"
+    return "inconnue"
 
 
 def text_price(text: str, cfg: dict) -> float | None:
@@ -399,17 +463,24 @@ def check_once() -> int:
                 price = to_float(offer.get("price"))
                 currency = offer.get("priceCurrency", "EUR")
                 promos = promo_hints(soup, offer, pnode or {})
-                availability = str(offer.get("availability", "")).split("/")[-1]
+                availability = stock_state(offer.get("availability"))
+            elif page.get("offer_hint"):
+                hinted = page["offer_hint"]
+                price = to_float(hinted.get("price"))
+                currency = hinted.get("priceCurrency", "EUR")
+                promos = promo_from_text(text)
+                availability = stock_state(hinted.get("availability"))
             else:
                 price = page.get("price_hint") or text_price(text, product)
                 if price is None:
-                    raise ValueError("aucun prix trouvé (JSON-LD et texte)")
+                    raise ValueError("aucun prix trouvé (JSON-LD, meta et texte)")
                 currency = "EUR"
                 promos = promo_from_text(text)
-                availability = "inconnue"
+                availability = stock_from_text(text)
             previous = record["points"][-1] if record["points"] else None
             prev_price = previous.get("price") if previous else None
             prev_avail = previous.get("availability") if previous else None
+            prev_stock = stock_state(prev_avail) if prev_avail else "inconnue"
             low = record.get("lowest")
 
             record["points"].append(
@@ -418,6 +489,7 @@ def check_once() -> int:
                     "price": price,
                     "currency": currency,
                     "availability": availability,
+                    "stock": availability,
                     "promo": promos,
                     "source": page["source"],
                 }
@@ -435,8 +507,17 @@ def check_once() -> int:
             elif prev_price is not None and abs(price - prev_price) > 0.001:
                 events.append(f"💰 {name} : {money(prev_price)} → {money(price)} — {url}")
                 alerts += 1
-            if prev_avail and prev_avail != availability:
-                events.append(f"📦 {name} : disponibilité {prev_avail} → {availability}")
+            if (
+                prev_stock != "inconnue"
+                and availability != "inconnue"
+                and prev_stock != availability
+            ):
+                if availability == "en stock" and prev_stock in ("rupture", "précommande"):
+                    events.append(f"✅ {name} : de nouveau disponible ({prev_stock} → en stock) — {url}")
+                elif availability == "rupture":
+                    events.append(f"⛔ {name} : en rupture de stock — {url}")
+                else:
+                    events.append(f"📦 {name} : {prev_stock} → {availability} — {url}")
                 alerts += 1
             if promos and (not previous or promos != previous.get("promo", [])):
                 events.append(f"🏷️ {name} : {', '.join(promos)} — {url}")
@@ -445,7 +526,8 @@ def check_once() -> int:
             delta = ""
             if low is not None and price > low:
                 delta = f" | +{price - low:.2f} vs bas"
-            digest_rows.append(f"• {name} : {money(price)}{delta} | bas {money(low)}")
+            stock_note = f" ({availability})" if availability != "inconnue" else ""
+            digest_rows.append(f"• {name} : {money(price)}{stock_note}{delta} | bas {money(low)}")
             log(f"{pid}: {money(price)}")
         except Exception as e:  # noqa: BLE001 - un site ne doit pas bloquer les autres
             err = f"{type(e).__name__}: {str(e)[:120]}"
