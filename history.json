@@ -133,10 +133,18 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 69.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
         }
       ],
-      "lowest": 389.4,
-      "lowest_at": "2026-11-23T08:31:23+00:00"
+      "lowest": 69.99,
+      "lowest_at": "2026-11-24T02:07:21+00:00"
     },
     "lumz-kare-dollar": {
       "name": "LUMZ — Tabouret Kare Design Dollar",
@@ -277,6 +285,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 125.0,
@@ -368,6 +384,11 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": null,
           "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         }
@@ -509,6 +530,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": 169.99,
           "currency": "EUR",
           "availability": "InStock",
@@ -658,6 +687,14 @@
           "availability": "inconnue",
           "promo": [],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 261.95,
@@ -808,6 +845,14 @@
             "code FITUEYES05"
           ],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 218.0,
@@ -938,6 +983,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": 118.99,
           "currency": "EUR",
           "availability": "inconnue",
@@ -1106,6 +1159,16 @@
             "code BWMON"
           ],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [
+            "code BWTUE"
+          ],
+          "source": "direct-texte"
         }
       ],
       "lowest": 47.3,
@@ -1236,6 +1299,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": 155.99,
           "currency": "EUR",
           "availability": "inconnue",
@@ -1385,6 +1456,14 @@
           "availability": "",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 300.0,
@@ -1524,6 +1603,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": 649.95,
           "currency": "EUR",
           "availability": "InStock",
@@ -1673,6 +1760,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 829.95,
@@ -1812,6 +1907,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": 40.95,
           "currency": "EUR",
           "availability": "InStock",
@@ -1961,6 +2064,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 880.05,
@@ -2105,6 +2216,14 @@
           "availability": "InStock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 1556.0,
@@ -2244,6 +2363,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
           "price": 200.0,
           "currency": "EUR",
           "availability": "",
