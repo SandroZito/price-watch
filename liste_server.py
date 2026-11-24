@@ -48,12 +48,15 @@ def rows() -> list[dict]:
     for p in cfg.get("products", []):
         rec = hist.get("products", {}).get(p["id"], {})
         pts = [x for x in rec.get("points", []) if x.get("price") is not None]
+        promos = sorted({c for x in rec.get("points", []) for c in x.get("promo", [])})
         out.append({
             "id": p["id"],
             "name": p["name"],
             "url": p["url"],
             "last": pts[-1].get("price") if pts else None,
             "low": rec.get("lowest"),
+            "high": max((x["price"] for x in pts), default=None),
+            "promos": promos,
             "variant": p.get("variant_sku") or p.get("variant_match") or "",
             "detected": rec.get("name", p["name"]),
             "source": pts[-1].get("source", "") if pts else "",
