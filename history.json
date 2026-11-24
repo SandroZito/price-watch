@@ -1,151 +1,5 @@
 {
   "products": {
-    "leenbakker-irene-noyer": {
-      "name": "Leen Bakker — Table Irene noyer extensible",
-      "url": "https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-manger/table-de-salle-a-manger-irene-couleur-noyer-extensible",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 389.4,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 389.4,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 389.4,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 389.4,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 389.4,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 69.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        }
-      ],
-      "lowest": 69.99,
-      "lowest_at": "2026-11-24T02:07:21+00:00"
-    },
     "lumz-kare-dollar": {
       "name": "LUMZ — Tabouret Kare Design Dollar",
       "url": "https://www.lumz.be/tafels/bijzettafels/kare-design-stool-ludieke-krukje",
@@ -287,6 +141,14 @@
           "source": "direct"
         },
         {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
           "t": "2026-11-24T02:07:21+00:00",
           "price": 125.0,
           "currency": "EUR",
@@ -297,408 +159,6 @@
       ],
       "lowest": 125.0,
       "lowest_at": "2026-11-20T13:53:06+00:00"
-    },
-    "mdm-griffith": {
-      "name": "Maisons du Monde — Étagère Griffith",
-      "url": "https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        }
-      ],
-      "lowest": null,
-      "lowest_at": null
-    },
-    "sweeek-lennox-bordeaux": {
-      "name": "sweeek — Étagère Lennox bordeaux",
-      "url": "https://fr.sweeek.be/product/etagere-metal-et-decor-bois-2-portes-bordeaux",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        }
-      ],
-      "lowest": 169.99,
-      "lowest_at": "2026-11-20T13:53:06+00:00"
-    },
-    "ram-lura5": {
-      "name": "RÅM — Table basse LURA_5 aluminium 100 cm",
-      "url": "https://www.raamint.com/fr/products/lura_5-table-basse-en-aluminium-100-cm",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 261.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 261.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 262.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 261.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 261.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 261.95,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 261.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        }
-      ],
-      "lowest": 261.95,
-      "lowest_at": "2026-11-23T03:40:43+00:00"
     },
     "fitueyes-picasso": {
       "name": "FITUEYES — Support TV Picasso (Walnut / With)",
@@ -847,6 +307,17 @@
           "source": "texte"
         },
         {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 218.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [
+            "code BF15",
+            "code FITUEYES05"
+          ],
+          "source": "texte"
+        },
+        {
           "t": "2026-11-24T02:07:21+00:00",
           "price": 218.0,
           "currency": "EUR",
@@ -858,148 +329,108 @@
       "lowest": 218.0,
       "lowest_at": "2026-11-20T13:53:06+00:00"
     },
-    "home24-hossa": {
-      "name": "home24 — Chaises Hossa lot de 2",
-      "url": "https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitation-cuir-fer-noir-noyer",
+    "mdm-griffith": {
+      "name": "Maisons du Monde — Étagère Griffith",
+      "url": "https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm",
       "points": [
         {
           "t": "2026-11-20T13:53:06+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-20T17:00:45+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-20T17:12:43+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-20T23:02:03+00:00",
           "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
         },
         {
           "t": "2026-11-21T03:53:56+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-21T12:28:18+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-21T20:01:46+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-22T07:56:19+00:00",
           "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
         },
         {
           "t": "2026-11-22T16:10:46+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-22T22:24:38+00:00",
           "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
         },
         {
           "t": "2026-11-23T03:40:43+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-23T08:31:23+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-23T14:23:44+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-23T21:21:58+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-23T21:27:20+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
+          "price": null,
+          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
         }
       ],
-      "lowest": 118.99,
-      "lowest_at": "2026-11-20T13:53:06+00:00"
+      "lowest": null,
+      "lowest_at": null
     },
     "jotex-irma": {
       "name": "Jotex — Tapis Irma 2212904-03",
@@ -1161,6 +592,16 @@
           "source": "direct-texte"
         },
         {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [
+            "code BWMON"
+          ],
+          "source": "direct-texte"
+        },
+        {
           "t": "2026-11-24T02:07:21+00:00",
           "price": 47.3,
           "currency": "EUR",
@@ -1174,147 +615,638 @@
       "lowest": 47.3,
       "lowest_at": "2026-11-20T13:53:06+00:00"
     },
-    "vidaxl-pouf-noir": {
-      "name": "vidaXL — Pouf cuir de chèvre noir 60x60x30",
-      "url": "https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-veritable-de-chevre/8719883562636.html",
+    "leenbakker-irene-noyer": {
+      "name": "Leen Bakker — Table Irene noyer extensible",
+      "url": "https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-manger/table-de-salle-a-manger-irene-couleur-noyer-extensible",
       "points": [
         {
           "t": "2026-11-20T13:53:06+00:00",
-          "price": 151.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-20T17:00:45+00:00",
-          "price": 151.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-20T17:12:43+00:00",
-          "price": 151.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-20T23:02:03+00:00",
           "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-"
         },
         {
           "t": "2026-11-21T03:53:56+00:00",
-          "price": 151.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-21T12:28:18+00:00",
-          "price": 151.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-21T20:01:46+00:00",
-          "price": 155.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-22T00:15:09+00:00",
-          "price": 155.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-22T07:56:19+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
+          "price": 649.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         },
         {
           "t": "2026-11-22T16:10:46+00:00",
-          "price": 155.99,
+          "price": 649.0,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-22T22:24:38+00:00",
           "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-"
         },
         {
           "t": "2026-11-23T03:40:43+00:00",
-          "price": 155.99,
+          "price": 649.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 69.99,
           "currency": "EUR",
           "availability": "inconnue",
           "promo": [],
           "source": "texte"
+        }
+      ],
+      "lowest": 69.99,
+      "lowest_at": "2026-11-24T02:07:21+00:00"
+    },
+    "emma-original-160x200": {
+      "name": "Emma — Matelas Original 160x200 (Super Deal)",
+      "url": "https://www.emma-matelas.be/ensembles/super-deal-original/?selection=EMAHE160200AAC:1,ESSES160200AAE:1,EPWCF040070RAB:2,EDVSF240220AAA:1",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         },
         {
           "t": "2026-11-23T08:31:23+00:00",
-          "price": 155.99,
+          "price": 880.05,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "direct-texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-23T14:23:44+00:00",
-          "price": 155.99,
+          "price": 880.05,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "direct-texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-23T21:21:58+00:00",
-          "price": 155.99,
+          "price": 880.05,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "direct-texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-23T21:27:20+00:00",
-          "price": 155.99,
+          "price": 880.05,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "direct-texte"
+          "source": "direct"
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
-          "price": 155.99,
+          "price": 880.05,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "direct-texte"
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
         },
         {
           "t": "2026-11-24T02:07:21+00:00",
-          "price": 155.99,
+          "price": 880.05,
           "currency": "EUR",
-          "availability": "inconnue",
+          "availability": "InStock",
           "promo": [],
-          "source": "direct-texte"
+          "source": "direct"
         }
       ],
-      "lowest": 151.99,
+      "lowest": 880.05,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "jysk-ellinge-160": {
+      "name": "JYSK — Cadre de lit ELLINGE 160x200 rangement",
+      "url": "https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 200.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "sweeek-lennox-bordeaux": {
+      "name": "sweeek — Étagère Lennox bordeaux",
+      "url": "https://fr.sweeek.be/product/etagere-metal-et-decor-bois-2-portes-bordeaux",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 169.99,
       "lowest_at": "2026-11-20T13:53:06+00:00"
     },
     "jysk-marstrand": {
@@ -1458,6 +1390,14 @@
           "source": "direct"
         },
         {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "",
+          "promo": [],
+          "source": "direct"
+        },
+        {
           "t": "2026-11-24T02:07:21+00:00",
           "price": 300.0,
           "currency": "EUR",
@@ -1467,6 +1407,788 @@
         }
       ],
       "lowest": 300.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "ram-lura5": {
+      "name": "RÅM — Table basse LURA_5 aluminium 100 cm",
+      "url": "https://www.raamint.com/fr/products/lura_5-table-basse-en-aluminium-100-cm",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": 327.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 262.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 261.95,
+      "lowest_at": "2026-11-23T03:40:43+00:00"
+    },
+    "emma-original-plus-160x200": {
+      "name": "Emma — Matelas Original+ 160x200 (Super Deal Plus)",
+      "url": "https://www.emma-matelas.be/ensembles/super-deal-plus-original-plus/?selection=EMAHE160200ATE:1,EPWCF040070RAB:2,EDVLD200200AAA:1",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 1556.0,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "vidaxl-pouf-noir": {
+      "name": "vidaXL — Pouf cuir de chèvre noir 60x60x30",
+      "url": "https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-veritable-de-chevre/8719883562636.html",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 151.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 151.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 151.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 151.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 151.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        }
+      ],
+      "lowest": 151.99,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "home24-hossa": {
+      "name": "home24 — Chaises Hossa lot de 2",
+      "url": "https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitation-cuir-fer-noir-noyer",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": null,
+          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "promo": [],
+          "source": "texte"
+        }
+      ],
+      "lowest": 118.99,
+      "lowest_at": "2026-11-20T13:53:06+00:00"
+    },
+    "sklum-alicia": {
+      "name": "SKLUM — Suspension fer Alicia",
+      "url": "https://www.sklum.com/fr/acheter-suspension/148555-suspension-en-fer-alicia.html?id_c=466845",
+      "points": [
+        {
+          "t": "2026-11-20T13:53:06+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:00:45+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T17:12:43+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-20T23:02:03+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T03:53:56+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T12:28:18+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-21T20:01:46+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T00:15:09+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T07:56:19+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T16:10:46+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-22T22:24:38+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T03:40:43+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T08:31:23+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T14:23:44+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:21:58+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:27:20+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:31:07+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-24T02:07:21+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        }
+      ],
+      "lowest": 40.95,
       "lowest_at": "2026-11-20T13:53:06+00:00"
     },
     "sklum-montana": {
@@ -1603,6 +2325,14 @@
         },
         {
           "t": "2026-11-23T21:31:07+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-23T21:59:56+00:00",
           "price": 649.95,
           "currency": "EUR",
           "availability": "InStock",
@@ -1762,6 +2492,14 @@
           "source": "direct"
         },
         {
+          "t": "2026-11-23T21:59:56+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "InStock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
           "t": "2026-11-24T02:07:21+00:00",
           "price": 829.95,
           "currency": "EUR",
@@ -1771,614 +2509,6 @@
         }
       ],
       "lowest": 829.95,
-      "lowest_at": "2026-11-20T13:53:06+00:00"
-    },
-    "sklum-alicia": {
-      "name": "SKLUM — Suspension fer Alicia",
-      "url": "https://www.sklum.com/fr/acheter-suspension/148555-suspension-en-fer-alicia.html?id_c=466845",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        }
-      ],
-      "lowest": 40.95,
-      "lowest_at": "2026-11-20T13:53:06+00:00"
-    },
-    "emma-original-160x200": {
-      "name": "Emma — Matelas Original 160x200 (Super Deal)",
-      "url": "https://www.emma-matelas.be/ensembles/super-deal-original/?selection=EMAHE160200AAC:1,ESSES160200AAE:1,EPWCF040070RAB:2,EDVSF240220AAA:1",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        }
-      ],
-      "lowest": 880.05,
-      "lowest_at": "2026-11-20T13:53:06+00:00"
-    },
-    "emma-original-plus-160x200": {
-      "name": "Emma — Matelas Original+ 160x200 (Super Deal Plus)",
-      "url": "https://www.emma-matelas.be/ensembles/super-deal-plus-original-plus/?selection=EMAHE160200ATE:1,EPWCF040070RAB:2,EDVLD200200AAA:1",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        }
-      ],
-      "lowest": 1556.0,
-      "lowest_at": "2026-11-20T13:53:06+00:00"
-    },
-    "jysk-ellinge-160": {
-      "name": "JYSK — Cadre de lit ELLINGE 160x200 rangement",
-      "url": "https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement",
-      "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T03:53:56+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T12:28:18+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-21T20:01:46+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T00:15:09+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T07:56:19+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T16:10:46+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-22T22:24:38+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T03:40:43+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T08:31:23+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T14:23:44+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:21:58+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:27:20+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-23T21:31:07+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-24T02:07:21+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        }
-      ],
-      "lowest": 200.0,
       "lowest_at": "2026-11-20T13:53:06+00:00"
     }
   },
