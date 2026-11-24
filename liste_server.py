@@ -49,14 +49,24 @@ def rows() -> list[dict]:
         rec = hist.get("products", {}).get(p["id"], {})
         pts = [x for x in rec.get("points", []) if x.get("price") is not None]
         promos = sorted({c for x in rec.get("points", []) for c in x.get("promo", [])})
+        series = [
+            {"t": d["d"] + "T12:00:00Z", "p": d["avg"], "lo": d.get("min"), "hi": d.get("max")}
+            for d in rec.get("daily", []) if d.get("avg") is not None
+        ]
+        series += [
+            {"t": x.get("t", ""), "p": x["price"]}
+            for x in rec.get("points", []) if x.get("price") is not None
+        ]
+        series.sort(key=lambda s: s["t"])
         out.append({
             "id": p["id"],
             "name": p["name"],
             "url": p["url"],
             "last": pts[-1].get("price") if pts else None,
             "low": rec.get("lowest"),
-            "high": max((x["price"] for x in pts), default=None),
+            "high": rec.get("highest") or max((x["price"] for x in pts), default=None),
             "promos": promos,
+            "series": series,
             "variant": p.get("variant_sku") or p.get("variant_match") or "",
             "detected": rec.get("name", p["name"]),
             "source": pts[-1].get("source", "") if pts else "",

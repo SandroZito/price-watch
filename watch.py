@@ -12,7 +12,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -22,7 +22,9 @@ BASE = Path(__file__).resolve().parent
 PRODUCTS_FILE = BASE / "products.json"
 HISTORY_FILE = BASE / "history.json"
 CREDENTIALS_FILE = Path.home() / ".config/price-watch/telegram.env"
-MAX_POINTS = 240
+MAX_POINTS = 240      # points bruts conservés (sécurité)
+RAW_DAYS = 7          # détails horaires récents
+SERIES_DAYS = 92      # ~3 mois de courbe quotidienne
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -81,7 +83,46 @@ def load_history() -> dict:
         return {"products": {}, "last_digest": None}
 
 
+def compact_record(record: dict, now: datetime) -> None:
+    """Consolide les vieux points en moyennes quotidiennes (courbe sur 3 mois)."""
+    cutoff = (now - timedelta(days=RAW_DAYS)).date().isoformat()
+    keep, old = [], []
+    for point in record.get("points", []):
+        day = str(point.get("t", ""))[:10]
+        (old if day and day < cutoff else keep).append(point)
+    if old:
+        daily = record.setdefault("daily", [])
+        by_day = {d["d"]: d for d in daily}
+        for point in old:
+            day = str(point.get("t", ""))[:10]
+            price = point.get("price")
+            if price is None:
+                continue
+            bucket = by_day.get(day)
+            if bucket is None:
+                bucket = {"d": day, "min": price, "max": price, "sum": price, "n": 1}
+                daily.append(bucket)
+                by_day[day] = bucket
+            else:
+                bucket["min"] = min(bucket["min"], price)
+                bucket["max"] = max(bucket["max"], price)
+                bucket["sum"] += price
+                bucket["n"] += 1
+        for bucket in daily:
+            if bucket.get("n"):
+                bucket["avg"] = round(bucket["sum"] / bucket["n"], 2)
+            bucket.pop("sum", None)
+        record["daily"] = sorted(daily, key=lambda d: d["d"])[-SERIES_DAYS:]
+    record["points"] = keep[-MAX_POINTS:]
+    prices = [p["price"] for p in record["points"] if p.get("price") is not None]
+    prices += [d["max"] for d in record.get("daily", []) if d.get("max") is not None]
+    if prices:
+        record["highest"] = max(prices)
+
+
 def save_history(history: dict) -> None:
+    for record in history.get("products", {}).values():
+        compact_record(record, datetime.now(timezone.utc))
     with HISTORY_FILE.open("w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
         f.write("\n")
