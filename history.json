@@ -3717,93 +3717,249 @@
     "zara-tapis-jute": {
       "name": "Zara — Tapis jute imprimé",
       "url": "https://www.zara.com/be/fr/tapis-jute-imprime-p42352029.html?v1=545422892",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 329.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 329.0,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 329.0,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-plateau-bois": {
       "name": "Zara — Plateau rectangulaire en bois",
       "url": "https://www.zara.com/be/fr/plateau-rectangulaire-en-bois-p42279040.html?v1=548891027",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 19.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 19.99,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 19.99,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-pimente": {
       "name": "Zara — Pimente céramique (lot de 2)",
       "url": "https://www.zara.com/be/fr/pimente-ceramique--lot-de-2--p40302043.html?v1=549615050",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 12.99,
+          "currency": "EUR",
+          "availability": "rupture",
+          "stock": "rupture",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 12.99,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 12.99,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-pincettes": {
       "name": "Zara — Lot de 4 pincettes à nappe citron",
       "url": "https://www.zara.com/be/fr/lot-de-4-pincettes-a-nappe-citron-p42267042.html?v1=545422194",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 17.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 17.99,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 17.99,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-panneau-cadre": {
       "name": "Zara — Panneau magnétique cadre en bois",
       "url": "https://www.zara.com/be/fr/panneau-magnetique-cadre-en-bois-p40247043.html?v1=545401441",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 49.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 49.99,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 49.99,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-panneau-lin": {
       "name": "Zara — Panneau magnétique lin",
       "url": "https://www.zara.com/be/fr/panneau-magnetique-lin-p44338043.html?v1=545453558",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 189.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 189.0,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 189.0,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-panneau-laque": {
       "name": "Zara — Panneau magnétique laqué",
       "url": "https://www.zara.com/be/fr/panneau-magnetique-laque-p44348043.html?v1=545453561",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 69.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 69.99,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 69.99,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "zara-cadre-photo": {
       "name": "Zara — Cadre photo bois",
       "url": "https://www.zara.com/be/fr/cadre-photo-bois-p46343045.html?v1=545436715",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 17.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+render"
+        }
+      ],
+      "lowest": 17.99,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 17.99,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "laredoute-351484364": {
       "name": "La Redoute — réf. 351484364",
       "url": "https://www.laredoute.be/ppdp/prod-351484364.aspx?docid=881526",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 63.2,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+premium"
+        }
+      ],
+      "lowest": 63.2,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 63.2,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "laredoute-350323172": {
       "name": "La Redoute — réf. 350323172",
       "url": "https://www.laredoute.be/ppdp/prod-350323172.aspx?docid=873026",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 356.85,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+premium"
+        }
+      ],
+      "lowest": 356.85,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 356.85,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "laredoute-324519698": {
       "name": "La Redoute — réf. 324519698",
       "url": "https://www.laredoute.be/ppdp/prod-324519698.aspx?docid=873026",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+premium"
+        }
+      ],
+      "lowest": 389.4,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 389.4,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "laredoute-351467868": {
       "name": "La Redoute — réf. 351467868",
       "url": "https://www.laredoute.be/ppdp/prod-351467868.aspx",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 419.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+premium"
+        }
+      ],
+      "lowest": 419.4,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 419.4,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     },
     "laredoute-350909803": {
       "name": "La Redoute — réf. 350909803",
       "url": "https://www.laredoute.be/ppdp/prod-350909803.aspx?dim1=#shoppingtool=treestructureflyout",
-      "points": [],
-      "lowest": null,
-      "lowest_at": null
+      "points": [
+        {
+          "t": "2026-11-24T21:08:00+00:00",
+          "price": 224.25,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+premium"
+        }
+      ],
+      "lowest": 224.25,
+      "lowest_at": "2026-11-24T21:08:00+00:00",
+      "highest": 224.25,
+      "last_auto_at": "2026-11-24T21:08:00+00:00"
     }
   },
   "last_digest": "2026-11-24",

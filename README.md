@@ -77,8 +77,12 @@ Codes promo détectés au passage : `BF15`, `FITUEYES05` (FITUEYES), `MIX30` (Jo
 ## Limitations honnêtes
 
 - **Maisons du Monde** est protégé par DataDome : curl, navigateur headless, proxies et lecteur de texte sont tous bloqués. Le produit est donc marqué `"manual": true` : `watch.py` ne tente plus de le lire (plus d'alerte `❌`), et le prix se saisit dans la liste (`liste.command` → champ « prix € » + Enregistrer). Le prix saisi entre dans l'historique, les graphiques et le plus bas/plus haut.
-- **Automatiser les sites bloqués** : ajoute une clé ScraperAPI dans le secret GitHub `SCRAPER_API_KEY` (et localement dans `~/.config/price-watch/scraper.env`). Les produits marqués `manual` + `scraper` sont alors vérifiés automatiquement, mais **limités à 2 fois par jour** (`scraper_min_hours: 12`) pour rester dans le quota gratuit (~1 000 crédits/mois). Sans clé, ils restent en saisie manuelle.
-- Produits concernés par ce quota : **Maisons du Monde — Griffith**, les **8 produits Zara** et les **5 produits La Redoute** (14 au total). Les autres produits ne consomment aucun crédit.
+- **Sites bloqués — ScraperAPI** : une clé est configurée (secret GitHub `SCRAPER_API_KEY` + `~/.config/price-watch/scraper.env`). Les produits `manual` + `scraper` sont vérifiés automatiquement :
+  - **Zara (8)** : mode `render`, **2×/jour** (~10 crédits/requête) ;
+  - **La Redoute (5)** : mode `premium`, **1×/jour** (~25-35 crédits/requête) ;
+  - **Maisons du Monde (1)** : reste **manuel** — ScraperAPI est bloqué même en `ultra_premium`.
+- Le plan gratuit ScraperAPI offre ~5 000 crédits (essai). À ce rythme (~335 crédits/jour), il dure ~2 semaines. Au-delà : réduire la fréquence, retirer des produits, ou prendre un plan payant.
+- Les autres produits (IKEA, RÅM, home24, Jotex, SKLUM, Emma…) ne consomment **aucun crédit**.
 - La stratégie est : JSON-LD direct → lecteur de texte public (`r.jina.ai`) en repli. Cela contourne la plupart des 403/429.
 - Les **codes promo** ne sont pas toujours dans le HTML : la détection couvre les prix barrés et les motifs `code / coupon / kortingscode`. Pour une couverture complète, une extension type Honey reste imbattable.
 - Les prix Emma sont ceux des matelas individuels (SKU de la sélection), pas forcément le total du pack affiché sur la page.

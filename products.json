@@ -20,8 +20,7 @@
       "id": "mdm-griffith",
       "name": "Maisons du Monde — Étagère Griffith",
       "url": "https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm",
-      "manual": true,
-      "scraper": true
+      "manual": true
     },
     {
       "id": "sweeek-lennox-bordeaux",
@@ -125,91 +124,117 @@
       "name": "Zara — Tapis jute imprimé",
       "url": "https://www.zara.com/be/fr/tapis-jute-imprime-p42352029.html?v1=545422892",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-plateau-bois",
       "name": "Zara — Plateau rectangulaire en bois",
       "url": "https://www.zara.com/be/fr/plateau-rectangulaire-en-bois-p42279040.html?v1=548891027",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-pimente",
       "name": "Zara — Pimente céramique (lot de 2)",
       "url": "https://www.zara.com/be/fr/pimente-ceramique--lot-de-2--p40302043.html?v1=549615050",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-pincettes",
       "name": "Zara — Lot de 4 pincettes à nappe citron",
       "url": "https://www.zara.com/be/fr/lot-de-4-pincettes-a-nappe-citron-p42267042.html?v1=545422194",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-panneau-cadre",
       "name": "Zara — Panneau magnétique cadre en bois",
       "url": "https://www.zara.com/be/fr/panneau-magnetique-cadre-en-bois-p40247043.html?v1=545401441",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-panneau-lin",
       "name": "Zara — Panneau magnétique lin",
       "url": "https://www.zara.com/be/fr/panneau-magnetique-lin-p44338043.html?v1=545453558",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-panneau-laque",
       "name": "Zara — Panneau magnétique laqué",
       "url": "https://www.zara.com/be/fr/panneau-magnetique-laque-p44348043.html?v1=545453561",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "zara-cadre-photo",
       "name": "Zara — Cadre photo bois",
       "url": "https://www.zara.com/be/fr/cadre-photo-bois-p46343045.html?v1=545436715",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 12,
+      "scraper_mode": "render"
     },
     {
       "id": "laredoute-351484364",
       "name": "La Redoute — réf. 351484364",
       "url": "https://www.laredoute.be/ppdp/prod-351484364.aspx?docid=881526",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 24,
+      "scraper_mode": "premium"
     },
     {
       "id": "laredoute-350323172",
       "name": "La Redoute — réf. 350323172",
       "url": "https://www.laredoute.be/ppdp/prod-350323172.aspx?docid=873026",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 24,
+      "scraper_mode": "premium"
     },
     {
       "id": "laredoute-324519698",
       "name": "La Redoute — réf. 324519698",
       "url": "https://www.laredoute.be/ppdp/prod-324519698.aspx?docid=873026",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 24,
+      "scraper_mode": "premium"
     },
     {
       "id": "laredoute-351467868",
       "name": "La Redoute — réf. 351467868",
       "url": "https://www.laredoute.be/ppdp/prod-351467868.aspx",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 24,
+      "scraper_mode": "premium"
     },
     {
       "id": "laredoute-350909803",
       "name": "La Redoute — réf. 350909803",
       "url": "https://www.laredoute.be/ppdp/prod-350909803.aspx?dim1=#shoppingtool=treestructureflyout",
       "manual": true,
-      "scraper": true
+      "scraper": true,
+      "scraper_min_hours": 24,
+      "scraper_mode": "premium"
     }
   ]
 }

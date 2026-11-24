@@ -85,6 +85,8 @@ def rows() -> list[dict]:
             "detected": rec.get("name", p["name"]),
             "source": pts[-1].get("source", "") if pts else "",
             "manual": bool(p.get("manual")),
+            "auto": bool(p.get("scraper")),
+            "auto_label": "2×/j" if float(p.get("scraper_min_hours", 12)) <= 12 else "1×/j",
             "manual_at": (pts[-1].get("t", "")[:10] if p.get("manual") and pts else ""),
             "stock": (pts[-1].get("stock") or stock_label(pts[-1].get("availability"))) if pts else "inconnue",
         })

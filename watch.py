@@ -212,12 +212,16 @@ def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
     # Repli optionnel : API de scraping (contourne DataDome/Cloudflare) si clé fournie.
     scraper_key = os.environ.get("SCRAPER_API_KEY")
     if scraper_key:
-        for render in (False, True):
+        forced = cfg.get("scraper_mode")
+        modes = (forced,) if forced else ("plain", "render", "premium")
+        for mode in modes:
             try:
                 params = {"api_key": scraper_key, "url": url, "country_code": "be"}
-                if render:
+                if mode in ("render", "premium"):
                     params["render"] = "true"
-                rs = requests.get("https://api.scraperapi.com", params=params, timeout=90)
+                if mode == "premium":
+                    params["premium"] = "true"
+                rs = requests.get("https://api.scraperapi.com", params=params, timeout=100)
                 if not rs.ok or len(rs.text) < 500:
                     continue
                 soup_s = BeautifulSoup(rs.text, "html.parser")
@@ -226,7 +230,7 @@ def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
                     return {
                         "soup": soup_s,
                         "text": soup_s.get_text(" ", strip=True),
-                        "source": "scraper" + ("+render" if render else ""),
+                        "source": "scraper+" + mode,
                         "price_hint": None,
                         "offer_hint": meta_s,
                     }
@@ -422,6 +426,35 @@ def pick_offer(products: list[dict], cfg: dict, url: str) -> tuple[dict | None, 
     return p, o, fallback
 
 
+def scraper_offer(nodes: list[dict], cfg: dict) -> tuple[dict | None, dict | None]:
+    """Choisit l'offre la moins chère parmi les variantes en stock (pages rendues)."""
+    candidates = []
+    for node in nodes:
+        for offer in offers_of(node):
+            price = to_float(offer.get("price"))
+            if price is not None:
+                candidates.append((node, offer, price))
+    if not candidates:
+        return None, None
+    match = cfg.get("variant_match")
+    if match:
+        selected = [
+            c for c in candidates
+            if str(match).lower() in json.dumps(
+                {"name": c[0].get("name"), "offer": c[1]}, ensure_ascii=False
+            ).lower()
+        ]
+        if selected:
+            candidates = selected
+    in_stock = [
+        c for c in candidates
+        if "instock" in str(c[1].get("availability", "")).lower()
+    ]
+    pool = in_stock or candidates
+    node, offer, _ = min(pool, key=lambda c: c[2])
+    return node, offer
+
+
 def promo_hints(soup: BeautifulSoup, offer: dict, product: dict) -> list[str]:
     hints: list[str] = []
     specs = offer.get("priceSpecification") or []
@@ -502,7 +535,7 @@ def check_once() -> int:
                     digest_rows.append(f"• {name} : {money(last['price'])} (manuel)")
                 log(f"{pid}: saisie manuelle, pas de lecture automatique")
                 continue
-            min_hours = float(settings.get("scraper_min_hours", 12))
+            min_hours = float(product.get("scraper_min_hours", settings.get("scraper_min_hours", 12)))
             last_auto = record.get("last_auto_at")
             if last_auto:
                 try:
@@ -522,7 +555,12 @@ def check_once() -> int:
         try:
             page = fetch_page(url, product, allow_text=not product.get("scraper"))
             soup, text = page["soup"], page["text"]
-            pnode, offer, fallback = pick_offer(jsonld_products(soup), product, url)
+            nodes = jsonld_products(soup)
+            if str(page.get("source", "")).startswith("scraper"):
+                pnode, offer = scraper_offer(nodes, product)
+                fallback = False
+            else:
+                pnode, offer, fallback = pick_offer(nodes, product, url)
             if offer and to_float(offer.get("price")) is not None:
                 price = to_float(offer.get("price"))
                 currency = offer.get("priceCurrency", "EUR")
