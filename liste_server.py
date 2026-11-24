@@ -13,6 +13,7 @@ import re
 import subprocess
 import sys
 import urllib.parse
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -70,6 +71,8 @@ def rows() -> list[dict]:
             "variant": p.get("variant_sku") or p.get("variant_match") or "",
             "detected": rec.get("name", p["name"]),
             "source": pts[-1].get("source", "") if pts else "",
+            "manual": bool(p.get("manual")),
+            "manual_at": (pts[-1].get("t", "")[:10] if p.get("manual") and pts else ""),
         })
     return out
 
@@ -98,10 +101,10 @@ def git(*args: str) -> tuple[int, str]:
         return 1, str(e)[:200]
 
 
-def sync(message: str) -> str:
+def sync(message: str, paths: tuple[str, ...] = ("products.json",)) -> str:
     """Commit + push + déclenche une vérification immédiate."""
     steps: list[str] = []
-    code, out = git("add", "products.json")
+    code, out = git("add", *paths)
     if code:
         return f"Erreur git add : {out[:120]}"
     code, out = git("diff", "--cached", "--quiet")
@@ -148,6 +151,38 @@ def add_product(body: dict) -> dict:
     write_products(cfg)
     msg = sync(f"liste: ajout {pid}")
     return {"rows": rows(), "message": f"Ajouté : {name} · {msg}"}
+
+
+def set_manual_price(body: dict) -> dict:
+    """Enregistre un prix saisi à la main (utile pour les sites protégés)."""
+    pid = str(body.get("id", ""))
+    try:
+        price = round(float(str(body.get("price", "")).replace(",", ".")), 2)
+    except (TypeError, ValueError):
+        return {"rows": rows(), "message": "❌ Prix invalide"}
+    if price <= 0:
+        return {"rows": rows(), "message": "❌ Prix invalide"}
+    hist = read_json(HISTORY, {"products": {}})
+    cfg = read_json(PRODUCTS, {"products": []})
+    name = next((p["name"] for p in cfg.get("products", []) if p["id"] == pid), pid)
+    record = hist.setdefault("products", {}).setdefault(
+        pid, {"name": name, "url": "", "points": [], "lowest": None, "lowest_at": None}
+    )
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    record.setdefault("points", []).append({
+        "t": stamp, "price": price, "currency": "EUR",
+        "availability": "inconnue", "promo": [], "source": "manuel",
+    })
+    record["points"] = record["points"][-240:]
+    record["lowest"] = price if record.get("lowest") is None else min(record["lowest"], price)
+    if record.get("lowest") == price:
+        record["lowest_at"] = stamp
+    record["highest"] = max(record.get("highest") or 0, price)
+    with HISTORY.open("w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    msg = sync(f"prix manuel: {pid} = {price:.2f}", ("history.json",))
+    return {"rows": rows(), "message": f"Prix {price:.2f} € enregistré · {msg}"}
 
 
 def remove_product(body: dict) -> dict:
@@ -209,6 +244,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(add_product(body))
         elif self.path == "/api/retirer":
             self.send_json(remove_product(body))
+        elif self.path == "/api/prix-manuel":
+            self.send_json(set_manual_price(body))
         elif self.path == "/api/sync":
             self.send_json({"message": sync("liste: synchronisation")})
         else:

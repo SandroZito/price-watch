@@ -76,7 +76,8 @@ Codes promo détectés au passage : `BF15`, `FITUEYES05` (FITUEYES), `MIX30` (Jo
 
 ## Limitations honnêtes
 
-- **Maisons du Monde** bloque tout accès automatisé (captcha), y compris Chrome headless et le lecteur de texte. Le script isole l'erreur et continue pour les autres ; tu recevras une alerte `❌` si ce prix reste illisible. Solution : retirer ce produit, ou surveiller son prix via une extension navigateur.
+- **Maisons du Monde** est protégé par DataDome : curl, navigateur headless, proxies et lecteur de texte sont tous bloqués. Le produit est donc marqué `"manual": true` : `watch.py` ne tente plus de le lire (plus d'alerte `❌`), et le prix se saisit dans la liste (`liste.command` → champ « prix € » + Enregistrer). Le prix saisi entre dans l'historique, les graphiques et le plus bas/plus haut.
+- **Automatiser MDM** : ajoute une clé de service de scraping gratuit (ScraperAPI, ScrapingBee…) dans le secret GitHub `SCRAPER_API_KEY`. `watch.py` l'utilise automatiquement pour les sites bloqués, puis retire `"manual": true` de l'entrée.
 - La stratégie est : JSON-LD direct → lecteur de texte public (`r.jina.ai`) en repli. Cela contourne la plupart des 403/429.
 - Les **codes promo** ne sont pas toujours dans le HTML : la détection couvre les prix barrés et les motifs `code / coupon / kortingscode`. Pour une couverture complète, une extension type Honey reste imbattable.
 - Les prix Emma sont ceux des matelas individuels (SKU de la sélection), pas forcément le total du pack affiché sur la page.

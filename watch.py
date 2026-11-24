@@ -159,6 +159,27 @@ def fetch_page(url: str, cfg: dict) -> dict:
         if attempt == 0:
             time.sleep(1)
 
+    # Repli optionnel : API de scraping (contourne DataDome) si une clé est fournie.
+    scraper_key = os.environ.get("SCRAPER_API_KEY")
+    if scraper_key:
+        try:
+            rs = requests.get(
+                "https://api.scraperapi.com",
+                params={"api_key": scraper_key, "url": url, "country_code": "be"},
+                timeout=70,
+            )
+            if rs.ok and len(rs.text) > 2000:
+                soup_s = BeautifulSoup(rs.text, "html.parser")
+                if jsonld_products(soup_s):
+                    return {
+                        "soup": soup_s,
+                        "text": soup_s.get_text(" ", strip=True),
+                        "source": "scraper",
+                        "price_hint": None,
+                    }
+        except requests.RequestException:
+            pass
+
     for attempt in range(2):
         try:
             r = requests.get("https://r.jina.ai/" + url, timeout=60)
@@ -362,6 +383,13 @@ def check_once() -> int:
         )
         record["name"] = name
         record["url"] = url
+
+        if product.get("manual"):
+            last = record["points"][-1] if record["points"] else None
+            if last and last.get("price") is not None:
+                digest_rows.append(f"• {name} : {money(last['price'])} (manuel)")
+            log(f"{pid}: saisie manuelle, pas de lecture automatique")
+            continue
 
         try:
             page = fetch_page(url, product)
