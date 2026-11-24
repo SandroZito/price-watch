@@ -322,7 +322,20 @@ def main() -> int:
             for c in chats:
                 if c["id"] not in seen:
                     seen.add(c["id"]); unique.append(c)
-            history["_tg_diag"] = unique
+            history["_tg_diag"] = {
+                "chat_count": len(unique), "chats": unique,
+                "update_count": len(j.get("result", [])),
+                "raw": str(j)[:600],
+            }
+            try:
+                t = requests.post(
+                    f"https://api.telegram.org/bot{token}/sendMessage",
+                    data={"chat_id": "9261328582", "text": "Test intégration Folio Prix"},
+                    timeout=20,
+                ).json()
+                history["_tg_diag"]["send_test"] = {"ok": t.get("ok"), "desc": t.get("description", "")[:100]}
+            except Exception as e:
+                history["_tg_diag"]["send_test"] = {"error": str(e)[:100]}
         except Exception as e:
             history["_tg_diag"] = [{"error": str(e)[:120]}]
     settings = cfg.get("settings", {})
