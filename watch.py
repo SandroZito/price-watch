@@ -128,12 +128,54 @@ def save_history(history: dict) -> None:
         f.write("\n")
 
 
+def shopify_offer(url: str, cfg: dict) -> dict | None:
+    """Boutiques Shopify : /products/<handle>.js donne prix + stock fiables."""
+    if "/products/" not in url:
+        return None
+    base = url.split("?")[0].split("#")[0].rstrip("/")
+    try:
+        r = requests.get(base + ".js", headers={"User-Agent": UA}, timeout=TIMEOUT)
+        if not r.ok:
+            return None
+        start = r.text.find("{")
+        if start < 0:
+            return None
+        data = json.loads(r.text[start:])
+    except (requests.RequestException, json.JSONDecodeError, ValueError):
+        return None
+    variants = data.get("variants") or []
+    if not variants:
+        return None
+    sku = str(cfg.get("variant_sku", "")) if cfg.get("variant_sku") else None
+    chosen = next((v for v in variants if str(v.get("sku")) == sku), None) if sku else None
+    if chosen is None:
+        chosen = variants[0]
+    price = chosen.get("price")
+    if isinstance(price, (int, float)) and price > 1000:
+        price = price / 100  # Shopify renvoie des centimes
+    return {
+        "price": price,
+        "priceCurrency": "EUR",
+        "availability": "InStock" if chosen.get("available") else "OutOfStock",
+    }
+
+
 def fetch_page(url: str, cfg: dict) -> dict:
     """Retourne {soup, text, source, price_hint}.
 
     1. GET direct + JSON-LD, 2. GET direct + texte, 3. lecteur de texte en repli.
     Deux tentatives à chaque étape : les IP GitHub Actions sont parfois limitées.
     """
+    shop = shopify_offer(url, cfg)
+    if shop:
+        return {
+            "soup": BeautifulSoup("", "html.parser"),
+            "text": "",
+            "source": "shopify",
+            "price_hint": None,
+            "offer_hint": shop,
+        }
+
     errors: list[str] = []
     for attempt in range(2):
         try:
@@ -250,15 +292,6 @@ def stock_state(raw) -> str:
     for needle, label in STOCK_LABELS:
         if needle in key:
             return label
-    return "inconnue"
-
-
-def stock_from_text(text: str) -> str:
-    low = text.lower()
-    if any(w in low for w in ("rupture de stock", "épuisé", "epuise", "out of stock", "sold out", "non disponible")):
-        return "rupture"
-    if any(w in low for w in ("en stock", "disponible", "in stock", "ajouter au panier")):
-        return "en stock"
     return "inconnue"
 
 
@@ -482,7 +515,9 @@ def check_once() -> int:
                     raise ValueError("aucun prix trouvé (JSON-LD, meta et texte)")
                 currency = "EUR"
                 promos = promo_from_text(text)
-                availability = stock_from_text(text)
+                # Pas d'inférence de stock depuis le texte : une page contient
+                # souvent "épuisé"/"en stock" pour d'autres variantes.
+                availability = "inconnue"
             previous = record["points"][-1] if record["points"] else None
             prev_price = previous.get("price") if previous else None
             prev_avail = previous.get("availability") if previous else None
