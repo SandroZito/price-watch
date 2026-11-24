@@ -301,24 +301,6 @@ def main() -> int:
     load_credentials()
     cfg = load_config()
     history = load_history()
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    if token:
-        diag = []
-        for name in ["FolioPrix", "folio_prix", "folioprix", "Folio_Prix", "FolioPrixGroup", "FolioPrixBot"]:
-            try:
-                j = requests.get(
-                    f"https://api.telegram.org/bot{token}/getChat",
-                    params={"chat_id": "@" + name}, timeout=15,
-                ).json()
-                r = j.get("result") or {}
-                diag.append({
-                    "name": name, "ok": j.get("ok"), "id": r.get("id"),
-                    "title": r.get("title"), "type": r.get("type"),
-                    "username": r.get("username"), "desc": j.get("description", "")[:80],
-                })
-            except Exception as e:
-                diag.append({"name": name, "error": str(e)[:80]})
-        history["_tg_diag"] = diag
     settings = cfg.get("settings", {})
     report_mode = os.environ.get("REPORT_MODE", settings.get("report_mode", "changes"))
     digest_hour = int(os.environ.get("DIGEST_HOUR_UTC", settings.get("digest_hour_utc", 8)))
