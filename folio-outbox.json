@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261125T170426",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n*Extrêmes 52 semaines*\n🔴 *MBLY* à son plus bas 52 semaines — 4,07 € (ext. 4,03 €, à +1,0 %)\n🔴 *PPFB* à son plus bas 52 semaines — 61,15 € (ext. 60,77 €, à +0,6 %)\n🔴 *SADC* à son plus bas 52 semaines — 27,89 € (ext. 27,89 €, à +0,0 %)\n🟢 *WM* à son plus haut 52 semaines — 226,59 € (ext. 227,29 €, à +0,3 %)\n🔴 *USDC* à son plus bas 52 semaines — 0,91 € (ext. 0,91 €, à +0,2 %)\n\nPortefeuille : -1,9 % (-142,51 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-25T14:57:42.319Z",
   "chat_id": "9261328582"
 }
