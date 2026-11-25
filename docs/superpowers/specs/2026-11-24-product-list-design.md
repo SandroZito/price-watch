@@ -23,7 +23,7 @@ L'utilisateur veut voir **la liste des liens qu'il a ajoutés** et pouvoir **ajo
 
 ## Contraintes
 
-- Le repo est dans `~/Downloads/...` : un `launchd` ne peut pas le lire (TCC). Le serveur est donc **lancé par l'utilisateur**, qui hérite des permissions du Terminal.
+- Le repo peut être dans un dossier protégé : un `launchd` n'hérite pas des permissions du Terminal. Le serveur est donc **lancé par l'utilisateur**, qui les hérite.
 - Git credential helper `osxkeychain` fonctionne pour push (scope `repo`) et pour le `workflow_dispatch` via l'API.
 - `api.telegram.org` est bloqué depuis le réseau local : toute vérification Telegram passe par GitHub Actions.
 - Le tracking reste dans le cloud (GitHub Actions) ; le serveur local ne tourne que pendant l'édition.
