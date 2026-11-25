@@ -1,11 +1,5 @@
 {
-  "messages": [
-    {
-      "id": "live-20261125T145444",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n🔴 📉 *CLS* -12,2 % sur 24 h (≥ 10 %)\n   -1,14 € · Celestica\n🔴 📉 *LSMC* -5,9 % sur 24 h (≥ 5 %)\n   -8,55 € · Amundi MSCI Semiconductors UCITS ETF\n\nPortefeuille : -1,7 % (-129,86 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-25T14:46:02.439Z",
+  "messages": [],
+  "last_run": "2026-11-25T14:54:58.874Z",
   "chat_id": "9261328582"
 }
