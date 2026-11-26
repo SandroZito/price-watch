@@ -1,11 +1,5 @@
 {
-  "messages": [
-    {
-      "id": "live-20261126T090749",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n🟢 📈 *2B76* +5,2 % sur 24 h (≥ 5 %)\n   14,92 € · iShares Automation & Robotics UCITS ETF\n\nPortefeuille : +1,9 % (145,47 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-26T06:46:35.595Z",
+  "messages": [],
+  "last_run": "2026-11-26T09:08:05.348Z",
   "chat_id": "9261328582"
 }
