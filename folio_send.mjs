@@ -152,10 +152,16 @@ async function main() {
     await pause(600);
   }
 
+  const metaBefore = JSON.stringify(outbox.meta);
   await runSideChecks(outbox.meta, token, chat);
+  const metaChanged = JSON.stringify(outbox.meta) !== metaBefore;
 
   if (DRY) {
     console.log("[dry] fichier non modifié.");
+    return;
+  }
+  if (!sent.length && !failed.length && !metaChanged) {
+    console.log("Rien à écrire dans l'outbox.");
     return;
   }
   outbox.chat_id = String(chat);
