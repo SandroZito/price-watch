@@ -22,7 +22,12 @@ async function api(token, method, params = {}) {
     signal: AbortSignal.timeout(20000),
   });
   const data = await res.json().catch(() => ({}));
-  if (!res.ok || !data.ok) throw new Error(`Telegram ${method}: ${data.description || res.status}`);
+  if (!res.ok || !data.ok) {
+    const err = new Error(`Telegram ${method}: ${data.description || res.status}`);
+    const retry = data.parameters?.retry_after ?? res.headers.get("retry-after");
+    err.retryAfter = Number(retry) || 0;
+    throw err;
+  }
   return data.result;
 }
 
@@ -46,7 +51,10 @@ async function sendChunk(text, token, chat) {
     } catch (e) {
       lastError = e;
       console.log(`  tentative ${attempt}/${MAX_TRIES} échouée : ${e.message}`);
-      if (attempt < MAX_TRIES) await pause(1500 * attempt);
+      if (attempt < MAX_TRIES) {
+        const wait = e.retryAfter ? Math.min(e.retryAfter, 60) * 1000 : 1500 * attempt;
+        await pause(wait);
+      }
     }
   }
   throw lastError;
@@ -63,8 +71,7 @@ async function send(text, token, chat) {
 }
 
 /** Trois vérifications indépendantes du Mac, avec état persisté dans outbox.meta. */
-async function runSideChecks(meta, token, chat) {
-  const now = Date.now();
+export async function runSideChecks(meta, token, chat, sendFn = send, now = Date.now()) {
 
   if (shouldFuelCheck(meta, now)) {
     try {
@@ -74,10 +81,11 @@ async function runSideChecks(meta, token, chat) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const current = parseFuelHtml(await res.text());
-      if (!Object.keys(current).length) throw new Error("page carburant illisible");
+      // Exiger les deux carburants : une page partielle ne doit pas écraser la baseline.
+      if (!current.diesel || !current.e10) throw new Error("page carburant partielle ou illisible");
       const changes = computeChanges(meta.fuel, current);
       if (changes.length) {
-        await send(formatFuelMessage(changes), token, chat);
+        await sendFn(formatFuelMessage(changes), token, chat);
         console.log(`Envoyé : ${changes.length} changement(s) carburant`);
       }
       meta.fuel = current;
@@ -90,7 +98,7 @@ async function runSideChecks(meta, token, chat) {
   if (shouldWatchdog(meta, now)) {
     const age = (now - Date.parse(meta.heartbeatAt)) / HOUR;
     try {
-      await send(formatWatchdog(age, meta.heartbeatAt), token, chat);
+      await sendFn(formatWatchdog(age, meta.heartbeatAt), token, chat);
       meta.watchdogAt = new Date(now).toISOString();
       console.log("Envoyé : watchdog Mac");
     } catch (e) {
@@ -102,10 +110,12 @@ async function runSideChecks(meta, token, chat) {
     try {
       const text = await fetchDigest();
       if (text) {
-        await send(text, token, chat);
+        await sendFn(text, token, chat);
+        meta.newsWeek = isoWeek(new Date(now));
         console.log("Envoyé : digeste actualité");
+      } else {
+        console.log("Actualité : flux vide, semaine non marquée");
       }
-      meta.newsWeek = isoWeek(new Date(now));
     } catch (e) {
       console.log(`Actualité : ${e.message} (réessai au prochain tour)`);
     }
@@ -172,7 +182,9 @@ async function main() {
   if (failed.length) process.exitCode = 1;
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === new URL(`file://${process.argv[1]}`).href) {
+  main().catch((e) => {
+    console.error(e);
+    process.exitCode = 1;
+  });
+}

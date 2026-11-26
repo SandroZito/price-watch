@@ -10,13 +10,13 @@ test("shouldFuelCheck attend 6 heures entre deux relevés", () => {
   assert.equal(shouldFuelCheck({ fuelCheckedAt: "2026-11-26T11:00:00Z" }, now), false);
 });
 
-test("shouldWatchdog alerte après 12h sans heartbeat, au plus une fois par jour", () => {
+test("shouldWatchdog alerte après 24h sans heartbeat, au plus une fois par jour", () => {
   assert.equal(shouldWatchdog({ heartbeatAt: "2026-11-26T11:30:00Z" }, now), false);
   assert.equal(
     shouldWatchdog({ heartbeatAt: "2026-11-25T20:00:00Z", watchdogAt: "2026-11-26T11:00:00Z" }, now),
     false,
   );
-  assert.equal(shouldWatchdog({ heartbeatAt: "2026-11-25T20:00:00Z" }, now), true);
+  assert.equal(shouldWatchdog({ heartbeatAt: "2026-11-25T10:00:00Z" }, now), true);
   assert.equal(shouldWatchdog({}, now), false);
 });
 
@@ -27,10 +27,10 @@ test("formatWatchdog indique l'âge et le dernier relevé", () => {
   assert.match(text, /2026-11-25T20:00:00Z/);
 });
 
-test("shouldNews ne déclenche que le lundi après 07h UTC, une fois par semaine", () => {
+test("shouldNews déclenche à partir du lundi 07h UTC, rattrapable en semaine", () => {
   const monday = Date.parse("2026-11-23T08:00:00Z");
   assert.equal(shouldNews({}, monday), true);
   assert.equal(shouldNews({ newsWeek: "2026-W48" }, monday), false);
   assert.equal(shouldNews({}, Date.parse("2026-11-23T06:00:00Z")), false);
-  assert.equal(shouldNews({}, Date.parse("2026-11-24T08:00:00Z")), false);
+  assert.equal(shouldNews({}, Date.parse("2026-11-24T08:00:00Z")), true);
 });

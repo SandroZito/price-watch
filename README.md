@@ -94,3 +94,12 @@ python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python watch.py
 ```
+
+## Alertes Folio sans Mac
+
+`folio_send.mjs` exécute aussi, via le workflow `folio-telegram.yml` (toutes les 5 min) :
+- `fuel_check.mjs` — prix maximums belges, contrôle toutes les 6 h (état dans `folio-outbox.json.meta.fuel`) ;
+- `side_checks.mjs` — garde-fous carburant / watchdog (24 h sans heartbeat) / digeste lundi ;
+- `news_digest.mjs` — actualité Belgique via Google News RSS.
+
+Tests : `node --test tests/*.test.mjs` (16 tests).
