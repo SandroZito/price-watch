@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const SOURCE = "https://www.energiafed.be/fr/prix-maximums";
+export const FUEL_SOURCE = "https://www.energiafed.be/fr/prix-maximums";
 const STATE = path.join(process.cwd(), "fuel-state.json");
 const LABELS = { diesel: "Diesel", e10: "Essence 95 E10" };
 const NAMES = { "Essence 95 RON - E10": "e10", Diesel: "diesel" };
@@ -76,7 +76,7 @@ async function sendText(text, token, chat) {
 export async function main({ dry = false } = {}) {
   let html;
   try {
-    const res = await fetch(SOURCE, {
+    const res = await fetch(FUEL_SOURCE, {
       signal: AbortSignal.timeout(20000),
       headers: { "User-Agent": "Mozilla/5.0 (Folio veille prix)" },
     });
