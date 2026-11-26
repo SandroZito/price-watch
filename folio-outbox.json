@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261126T043120",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n*Extrêmes 52 semaines*\n🔴 *USDC* à son plus bas 52 semaines — 0,92 € (ext. 0,91 €, à +0,2 %)\n\nPortefeuille : -1,2 % (-91,83 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-26T00:19:34.169Z",
   "chat_id": "9261328582"
 }
