@@ -358,6 +358,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 125.0,
@@ -722,6 +749,33 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": 179.0,
           "currency": "EUR",
           "availability": "en stock",
@@ -1244,6 +1298,39 @@
             "code BWTHU"
           ],
           "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY"
+          ],
+          "source": "direct-meta"
         }
       ],
       "lowest": 47.3,
@@ -1574,6 +1661,21 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.leenbakker.be/fr/tables-et-bure; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.leenbakker.be/fr/tables-et-bure; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.leenbakker.be/fr/tables-et-bure; direct: HTTPError: "
         }
       ],
       "lowest": 389.4,
@@ -1932,6 +2034,33 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": 880.05,
           "currency": "EUR",
           "availability": "en stock",
@@ -2302,6 +2431,33 @@
           "stock": "inconnue",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 200.0,
@@ -2666,6 +2822,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 169.99,
@@ -3024,6 +3207,33 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": 300.0,
           "currency": "EUR",
           "availability": "inconnue",
@@ -3397,6 +3607,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "shopify"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
         }
       ],
       "lowest": 261.95,
@@ -3761,6 +3998,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 1556.0,
@@ -4116,6 +4380,33 @@
           "stock": "inconnue",
           "promo": [],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
         }
       ],
       "lowest": 151.99,
@@ -4445,6 +4736,21 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/chaises-ho; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/chaises-ho; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/chaises-ho; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": null,
           "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/chaises-ho; direct: HTTPError: "
         }
@@ -4805,6 +5111,33 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": 40.95,
           "currency": "EUR",
           "availability": "précommande",
@@ -5175,6 +5508,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 649.95,
@@ -5539,6 +5899,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 829.95,
@@ -5727,6 +6114,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 279.0,
@@ -5881,6 +6295,21 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/table-en-b; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/table-en-b; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/table-en-b; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": null,
           "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.home24.be/fr/article/table-en-b; direct: HTTPError: "
         }
@@ -6063,6 +6492,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 699.0,
@@ -6181,6 +6637,21 @@
         },
         {
           "t": "2026-11-26T12:54:20+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.weba.be/fr/table-ronde-flaminia; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:14:40+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.weba.be/fr/table-ronde-flaminia; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:35:09+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.weba.be/fr/table-ronde-flaminia; direct: HTTPError: "
+        },
+        {
+          "t": "2026-11-26T22:55:36+00:00",
           "price": null,
           "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.weba.be/fr/table-ronde-flaminia; direct: HTTPError: "
         }
