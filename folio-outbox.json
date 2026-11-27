@@ -1,12 +1,6 @@
 {
-  "messages": [
-    {
-      "id": "live-20261127T161818",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n*Extrêmes 52 semaines*\n🔴 *MBLY* à son plus bas 52 semaines — 4,06 € (ext. 4,03 €, à +0,8 %)\n\nPortefeuille : +0,9 % (67,85 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-27T16:00:35.172Z",
+  "messages": [],
+  "last_run": "2026-11-27T16:18:35.038Z",
   "chat_id": "9261328582",
   "meta": {
     "heartbeatAt": "2026-11-27T15:45:18.342Z",
@@ -20,7 +14,7 @@
         "date": "2026-11-28"
       }
     },
-    "fuelCheckedAt": "2026-11-27T10:08:02.001Z",
+    "fuelCheckedAt": "2026-11-27T16:18:34.297Z",
     "newsWeek": "2026-W48"
   }
 }
