@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261127T230018",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n*Extrêmes 52 semaines*\n🟢 *AAPL* à son plus haut 52 semaines — 327,23 € (ext. 329,32 €, à +0,6 %)\n\nPortefeuille : +1,0 % (74,29 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-27T16:42:33.164Z",
   "chat_id": "9261328582",
   "meta": {
