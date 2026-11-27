@@ -119,7 +119,8 @@
     {
       "id": "weba-flaminia",
       "name": "Weba — Table ronde Flaminia 120/160×120",
-      "url": "https://www.weba.be/fr/table-ronde-flaminia-120-160x120cm-decor-naturel-130410-003.html"
+      "url": "https://www.weba.be/fr/table-ronde-flaminia-120-160x120cm-decor-naturel-130410-003.html",
+      "scraper_fallback": true
     },
     {
       "id": "zara-tapis-jute",

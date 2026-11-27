@@ -222,11 +222,12 @@ def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
         if attempt == 0:
             time.sleep(1)
 
-    # Repli optionnel : API de scraping (contourne DataDome/Cloudflare) si clé fournie.
-    skey = scraper_key()
+    # Repli ScraperAPI uniquement pour les produits qui en ont besoin : l'activer
+    # pour tous rendrait le run horaire trop long (plusieurs minutes par produit).
+    skey = scraper_key() if cfg.get("scraper_fallback") else None
     if skey:
         forced = cfg.get("scraper_mode")
-        modes = (forced,) if forced else ("plain", "render", "premium")
+        modes = (forced,) if forced else ("plain", "render")
         for mode in modes:
             try:
                 params = {"api_key": skey, "url": url, "country_code": "be"}
@@ -234,7 +235,7 @@ def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
                     params["render"] = "true"
                 if mode == "premium":
                     params["premium"] = "true"
-                rs = requests.get("https://api.scraperapi.com", params=params, timeout=100)
+                rs = requests.get("https://api.scraperapi.com", params=params, timeout=45)
                 if not rs.ok or len(rs.text) < 500:
                     continue
                 soup_s = BeautifulSoup(rs.text, "html.parser")
