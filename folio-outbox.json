@@ -1,5 +1,11 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "live-20261127T104353",
+      "kind": "live",
+      "text": "🚨 *Folio — alerte en direct*\n\n🟢 📈 *PEPE* +5,2 % sur 24 h (≥ 5 %)\n   0,15 € · Pepe\n\nPortefeuille : +1,3 % (97,80 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
+    }
+  ],
   "last_run": "2026-11-27T10:08:02.827Z",
   "chat_id": "9261328582",
   "meta": {
