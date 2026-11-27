@@ -540,7 +540,9 @@ def check_once() -> int:
         record["name"] = name
         record["url"] = url
 
-        skey = scraper_key()
+        # Les produits manuels restent sautés dans Actions : seule une vraie
+        # variable SCRAPER_API_KEY (locale) les autorise, pas la clé embarquée.
+        skey = os.environ.get("SCRAPER_API_KEY")
         throttled = False
         if product.get("manual"):
             if not product.get("scraper") or not skey:
