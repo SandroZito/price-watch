@@ -580,6 +580,13 @@ def check_once() -> int:
             else:
                 price = page.get("price_hint") or text_price(text, product)
                 if price is None:
+                    # Diagnostic ciblé : la page diffère souvent selon la sortie (IP Actions).
+                    log(
+                        f"{pid}: DIAG source={page.get('source')} " +
+                        f"jsonld={len(jsonld_products(page['soup']))} " +
+                        f"meta={meta_offer(page['soup'])} " +
+                        f"textlen={len(text)} extrait={text[:180]!r}"
+                    )
                     raise ValueError("aucun prix trouvé (JSON-LD, meta et texte)")
                 currency = "EUR"
                 promos = promo_from_text(text)
