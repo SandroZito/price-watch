@@ -412,6 +412,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 125.0,
@@ -830,6 +857,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 179.0,
           "currency": "EUR",
           "availability": "en stock",
@@ -1418,6 +1472,39 @@
             "code BLACKFRIDAY"
           ],
           "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY"
+          ],
+          "source": "direct-meta"
         }
       ],
       "lowest": 47.3,
@@ -1784,6 +1871,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 389.4,
           "currency": "EUR",
           "availability": "en stock",
@@ -2208,6 +2322,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 880.05,
@@ -2620,6 +2761,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 200.0,
           "currency": "EUR",
           "availability": "inconnue",
@@ -3044,6 +3212,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 169.99,
@@ -3456,6 +3651,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 300.0,
           "currency": "EUR",
           "availability": "inconnue",
@@ -3883,6 +4105,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 261.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
         }
       ],
       "lowest": 261.95,
@@ -4301,6 +4550,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 1556.0,
@@ -4710,6 +4986,33 @@
           "stock": "inconnue",
           "promo": [],
           "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
         }
       ],
       "lowest": 151.99,
@@ -5077,6 +5380,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 118.99,
           "currency": "EUR",
           "availability": "inconnue",
@@ -5501,6 +5831,33 @@
           "stock": "précommande",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 40.95,
@@ -5913,6 +6270,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 649.95,
           "currency": "EUR",
           "availability": "en stock",
@@ -6337,6 +6721,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 829.95,
@@ -6579,6 +6990,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 279.0,
@@ -6771,6 +7209,33 @@
         },
         {
           "t": "2026-11-27T05:36:28+00:00",
+          "price": 596.7,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 596.7,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 596.7,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
           "price": 596.7,
           "currency": "EUR",
           "availability": "inconnue",
@@ -7011,6 +7476,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 699.0,
@@ -7161,6 +7653,33 @@
           "t": "2026-11-27T05:36:28+00:00",
           "price": null,
           "error": "ValueError: aucun prix trouvé (JSON-LD, meta et texte)"
+        },
+        {
+          "t": "2026-11-27T11:21:10+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+plain"
+        },
+        {
+          "t": "2026-11-27T11:41:36+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+plain"
+        },
+        {
+          "t": "2026-11-27T12:02:04+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+plain"
         }
       ],
       "lowest": 399.0,
@@ -7415,7 +7934,7 @@
       "last_auto_at": "2026-11-24T21:08:00+00:00"
     }
   },
-  "last_digest": "2026-11-26",
+  "last_digest": "2026-11-27",
   "_tg_diag": {
     "chat_count": 0,
     "chats": [],
