@@ -1,12 +1,6 @@
 {
-  "messages": [
-    {
-      "id": "live-20261127T160018",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n🟢 📈 *ALAB* +5,3 % sur 24 h (≥ 5 %)\n   1,64 € · Astera Labs\n\nPortefeuille : +0,9 % (65,31 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-27T15:54:30.543Z",
+  "messages": [],
+  "last_run": "2026-11-27T16:00:35.172Z",
   "chat_id": "9261328582",
   "meta": {
     "heartbeatAt": "2026-11-27T15:45:18.342Z",
