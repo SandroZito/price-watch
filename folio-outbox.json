@@ -1,12 +1,6 @@
 {
-  "messages": [
-    {
-      "id": "live-20261127T162418",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n🟢 📈 *CRDO* +5,2 % sur 24 h (≥ 5 %)\n   1,05 € · Credo Technology\n\nPortefeuille : +0,9 % (66,83 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-27T16:18:35.038Z",
+  "messages": [],
+  "last_run": "2026-11-27T16:24:32.124Z",
   "chat_id": "9261328582",
   "meta": {
     "heartbeatAt": "2026-11-27T15:45:18.342Z",
