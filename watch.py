@@ -223,13 +223,13 @@ def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
             time.sleep(1)
 
     # Repli optionnel : API de scraping (contourne DataDome/Cloudflare) si clé fournie.
-    scraper_key = scraper_key()
-    if scraper_key:
+    skey = scraper_key()
+    if skey:
         forced = cfg.get("scraper_mode")
         modes = (forced,) if forced else ("plain", "render", "premium")
         for mode in modes:
             try:
-                params = {"api_key": scraper_key, "url": url, "country_code": "be"}
+                params = {"api_key": skey, "url": url, "country_code": "be"}
                 if mode in ("render", "premium"):
                     params["render"] = "true"
                 if mode == "premium":
@@ -539,10 +539,10 @@ def check_once() -> int:
         record["name"] = name
         record["url"] = url
 
-        scraper_key = scraper_key()
+        skey = scraper_key()
         throttled = False
         if product.get("manual"):
-            if not product.get("scraper") or not scraper_key:
+            if not product.get("scraper") or not skey:
                 last = record["points"][-1] if record["points"] else None
                 if last and last.get("price") is not None:
                     digest_rows.append(f"• {name} : {money(last['price'])} (manuel)")
