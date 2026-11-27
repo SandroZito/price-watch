@@ -58,19 +58,6 @@ def money(value: float | None) -> str:
     return "n/a" if value is None else f"{value:.2f} €"
 
 
-def scraper_key() -> str | None:
-    """Clé ScraperAPI.
-
-    Le workflow GitHub ne transmet pas SCRAPER_API_KEY à watch.py : la clé est
-    embarquée dans le secret TELEGRAM_CHAT_ID sous la forme `chatid|<clé>`.
-    """
-    direct = os.environ.get("SCRAPER_API_KEY")
-    if direct:
-        return direct
-    raw = os.environ.get("TELEGRAM_CHAT_ID") or ""
-    return raw.split("|", 1)[1].strip() if "|" in raw else None
-
-
 def load_credentials() -> None:
     """Charge les secrets locaux (Telegram, ScraperAPI) depuis ~/.config/price-watch."""
     files = [CREDENTIALS_FILE, CREDENTIALS_FILE.parent / "scraper.env"]
@@ -224,7 +211,7 @@ def fetch_page(url: str, cfg: dict, allow_text: bool = True) -> dict:
 
     # Repli ScraperAPI uniquement pour les produits qui en ont besoin : l'activer
     # pour tous rendrait le run horaire trop long (plusieurs minutes par produit).
-    skey = scraper_key() if cfg.get("scraper_fallback") else None
+    skey = os.environ.get("SCRAPER_API_KEY") if cfg.get("scraper_fallback") else None
     if skey:
         forced = cfg.get("scraper_mode")
         modes = (forced,) if forced else ("plain", "render")
@@ -494,7 +481,7 @@ def telegram(text: str) -> None:
     # Bot dédié au suivi prix. Le secret TELEGRAM_BOT_TOKEN du repo pointe sur
     # @FolioPrixBot ; PRICE_* permet de forcer un autre bot si besoin.
     token = os.environ.get("PRICE_TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN")
-    chat = (os.environ.get("PRICE_TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_CHAT_ID") or "").split("|", 1)[0]
+    chat = os.environ.get("PRICE_TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat:
         log("Telegram non configure (PRICE_TELEGRAM_BOT_TOKEN / PRICE_TELEGRAM_CHAT_ID absents)")
         return
