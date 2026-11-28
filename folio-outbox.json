@@ -1,12 +1,6 @@
 {
-  "messages": [
-    {
-      "id": "live-20261128T134518",
-      "kind": "live",
-      "text": "🚨 *Folio — alerte en direct*\n\n🔴 📉 *VET* -5,1 % sur 24 h (≥ 5 %)\n   -2,11 € · VET\n🔴 📉 *THETA* -5,0 % sur 24 h (≥ 5 %)\n   -0,94 € · THETA\n\nPortefeuille : +0,7 % (56,99 €) sur 24 h\n\n⚠️ Alerte automatique de seuil, pas un conseil en investissement."
-    }
-  ],
-  "last_run": "2026-11-28T09:49:56.664Z",
+  "messages": [],
+  "last_run": "2026-11-28T13:45:32.158Z",
   "chat_id": "9261328582",
   "meta": {
     "heartbeatAt": "2026-11-28T09:49:44.669Z",
