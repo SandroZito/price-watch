@@ -5,38 +5,6 @@
       "url": "https://www.lumz.be/tafels/bijzettafels/kare-design-stool-ludieke-krukje",
       "points": [
         {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 125.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 125.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 125.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 125.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 125.0,
           "currency": "EUR",
@@ -433,6 +401,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 125.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 125.0,
           "currency": "EUR",
           "availability": "en stock",
@@ -443,44 +438,21 @@
       ],
       "lowest": 125.0,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 125.0
+      "highest": 125.0,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 125.0,
+          "max": 125.0,
+          "n": 4,
+          "avg": 125.0
+        }
+      ]
     },
     "fitueyes-picasso": {
       "name": "FITUEYES — Support TV Picasso (Walnut / With)",
       "url": "https://eu.fitueyes.com/products/picasso-serie-%e2%84%a2-tv-stand-for-32-65-inches?variant=50272563593482",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 218.0,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 218.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 218.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 218.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 218.0,
@@ -890,36 +862,52 @@
           "stock": "en stock",
           "promo": [],
           "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 179.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
         }
       ],
       "lowest": 179.0,
       "lowest_at": "2026-11-24T23:26:48+00:00",
-      "highest": 218.0
+      "highest": 218.0,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 218.0,
+          "max": 218.0,
+          "n": 4,
+          "avg": 218.0
+        }
+      ]
     },
     "mdm-griffith": {
       "name": "Maisons du Monde — Étagère Griffith",
       "url": "https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noyer-et-bois-de-frene-massif-l91-cm-griffith-249459.htm",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": null,
-          "error": "ValueError: aucun prix trouvé (JSON-LD et texte)"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.maisonsdumonde.com/BE/fr/p/etagere-en-placage-noye"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": null,
@@ -1021,41 +1009,13 @@
       ],
       "lowest": 399.2,
       "lowest_at": "2026-11-24T16:07:02+00:00",
-      "highest": 399.2
+      "highest": 399.2,
+      "daily": []
     },
     "jotex-irma": {
       "name": "Jotex — Tapis Irma 2212904-03",
       "url": "https://www.jotex.be/irma-tapijt/2212904-03",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 47.3,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 47.3,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 47.3,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.jotex.be/irma-tapijt/2212904-03"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 47.3,
@@ -1505,45 +1465,60 @@
             "code BLACKFRIDAY"
           ],
           "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY",
+            "code BWEEKEND"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BLACKFRIDAY",
+            "code BWEEKEND"
+          ],
+          "source": "direct-meta"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 47.3,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [
+            "code BWEEKEND"
+          ],
+          "source": "direct-meta"
         }
       ],
       "lowest": 47.3,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 47.3
+      "highest": 47.3,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 47.3,
+          "max": 47.3,
+          "n": 3,
+          "avg": 47.3
+        }
+      ]
     },
     "leenbakker-irene-noyer": {
       "name": "Leen Bakker — Table Irene noyer extensible",
       "url": "https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-manger/table-de-salle-a-manger-irene-couleur-noyer-extensible",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 649.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.leenbakker.be/fr/tables-et-bureaux/tables-salle-a-"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 649.0,
@@ -1898,6 +1873,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 389.4,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 389.4,
           "currency": "EUR",
           "availability": "en stock",
@@ -1908,44 +1910,21 @@
       ],
       "lowest": 389.4,
       "lowest_at": "2026-11-23T08:31:23+00:00",
-      "highest": 649.0
+      "highest": 649.0,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 649.0,
+          "max": 649.0,
+          "n": 3,
+          "avg": 649.0
+        }
+      ]
     },
     "emma-original-160x200": {
       "name": "Emma — Matelas Original 160x200 (Super Deal)",
       "url": "https://www.emma-matelas.be/ensembles/super-deal-original/?selection=EMAHE160200AAC:1,ESSES160200AAE:1,EPWCF040070RAB:2,EDVSF240220AAA:1",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 880.05,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 880.05,
@@ -2343,6 +2322,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 880.05,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 880.05,
           "currency": "EUR",
           "availability": "en stock",
@@ -2353,44 +2359,21 @@
       ],
       "lowest": 880.05,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 880.05
+      "highest": 880.05,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 880.05,
+          "max": 880.05,
+          "n": 4,
+          "avg": 880.05
+        }
+      ]
     },
     "jysk-ellinge-160": {
       "name": "JYSK — Cadre de lit ELLINGE 160x200 rangement",
       "url": "https://jysk.be/fr/chambre-coucher/lits/sommiers-et-cadres-de-lit/cadres-de-lit/cadre-de-lit-ellinge-160x200-rangement",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 200.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 200.0,
@@ -2788,6 +2771,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 200.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 200.0,
           "currency": "EUR",
           "availability": "inconnue",
@@ -2798,44 +2808,21 @@
       ],
       "lowest": 200.0,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 200.0
+      "highest": 200.0,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 200.0,
+          "max": 200.0,
+          "n": 4,
+          "avg": 200.0
+        }
+      ]
     },
     "sweeek-lennox-bordeaux": {
       "name": "sweeek — Étagère Lennox bordeaux",
       "url": "https://fr.sweeek.be/product/etagere-metal-et-decor-bois-2-portes-bordeaux",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 169.99,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 169.99,
@@ -3233,6 +3220,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 169.99,
           "currency": "EUR",
           "availability": "en stock",
@@ -3243,44 +3257,21 @@
       ],
       "lowest": 169.99,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 169.99
+      "highest": 169.99,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 169.99,
+          "max": 169.99,
+          "n": 4,
+          "avg": 169.99
+        }
+      ]
     },
     "jysk-marstrand": {
       "name": "JYSK — Table MARSTRAND Ø110/110x200 chêne",
       "url": "https://jysk.be/fr/salle-manger/tables-manger/table-marstrand-o110-110x200-chene-naturel?article=3640235",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 300.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 300.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 300.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 300.0,
-          "currency": "EUR",
-          "availability": "",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 300.0,
@@ -3684,48 +3675,52 @@
           "stock": "inconnue",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 300.0,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 300.0,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 300.0
+      "highest": 300.0,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 300.0,
+          "max": 300.0,
+          "n": 4,
+          "avg": 300.0
+        }
+      ]
     },
     "ram-lura5": {
       "name": "RÅM — Table basse LURA_5 aluminium 100 cm",
       "url": "https://www.raamint.com/fr/products/lura_5-table-basse-en-aluminium-100-cm",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 327.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 327.95,
@@ -4132,48 +4127,52 @@
           "stock": "en stock",
           "promo": [],
           "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 262.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 262.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 262.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "shopify"
         }
       ],
       "lowest": 261.95,
       "lowest_at": "2026-11-23T03:40:43+00:00",
-      "highest": 327.95
+      "highest": 327.95,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 327.95,
+          "max": 327.95,
+          "n": 4,
+          "avg": 327.95
+        }
+      ]
     },
     "emma-original-plus-160x200": {
       "name": "Emma — Matelas Original+ 160x200 (Super Deal Plus)",
       "url": "https://www.emma-matelas.be/ensembles/super-deal-plus-original-plus/?selection=EMAHE160200ATE:1,EPWCF040070RAB:2,EDVLD200200AAA:1",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 1556.0,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 1556.0,
@@ -4571,6 +4570,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 1556.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 1556.0,
           "currency": "EUR",
           "availability": "en stock",
@@ -4581,41 +4607,21 @@
       ],
       "lowest": 1556.0,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 1556.0
+      "highest": 1556.0,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 1556.0,
+          "max": 1556.0,
+          "n": 4,
+          "avg": 1556.0
+        }
+      ]
     },
     "vidaxl-pouf-noir": {
       "name": "vidaXL — Pouf cuir de chèvre noir 60x60x30",
       "url": "https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-veritable-de-chevre/8719883562636.html",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 151.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 151.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 151.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://fr.vidaxl.be/e/vidaxl-pouf-60-x-60-x-30-cm-noir-cuir-v"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 151.99,
@@ -5007,6 +5013,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 155.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "direct-texte"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 155.99,
           "currency": "EUR",
           "availability": "inconnue",
@@ -5017,41 +5050,21 @@
       ],
       "lowest": 151.99,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 155.99
+      "highest": 155.99,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 151.99,
+          "max": 151.99,
+          "n": 3,
+          "avg": 151.99
+        }
+      ]
     },
     "home24-hossa": {
       "name": "home24 — Chaises Hossa lot de 2",
       "url": "https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitation-cuir-fer-noir-noyer",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 118.99,
-          "currency": "EUR",
-          "availability": "inconnue",
-          "promo": [],
-          "source": "texte"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": null,
-          "error": "HTTPError: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.home24.be/fr/article/chaises-hossa-lot-de-2-imitat"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 118.99,
@@ -5408,6 +5421,33 @@
         {
           "t": "2026-11-27T12:02:04+00:00",
           "price": 118.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 154.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 154.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 154.99,
           "currency": "EUR",
           "availability": "inconnue",
           "stock": "inconnue",
@@ -5417,44 +5457,21 @@
       ],
       "lowest": 118.99,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 118.99
+      "highest": 154.99,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 118.99,
+          "max": 118.99,
+          "n": 3,
+          "avg": 118.99
+        }
+      ]
     },
     "sklum-alicia": {
       "name": "SKLUM — Suspension fer Alicia",
       "url": "https://www.sklum.com/fr/acheter-suspension/148555-suspension-en-fer-alicia.html?id_c=466845",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 40.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 40.95,
@@ -5852,6 +5869,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 40.95,
+          "currency": "EUR",
+          "availability": "précommande",
+          "stock": "précommande",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 40.95,
           "currency": "EUR",
           "availability": "précommande",
@@ -5862,44 +5906,21 @@
       ],
       "lowest": 40.95,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 40.95
+      "highest": 40.95,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 40.95,
+          "max": 40.95,
+          "n": 4,
+          "avg": 40.95
+        }
+      ]
     },
     "sklum-montana": {
       "name": "SKLUM — Table extensible Montana 120-160",
       "url": "https://www.sklum.com/fr/acheter-tables-salle-a-manger/206144-table-a-manger-ronde-extensible-120-160x120-cm-en-mdf-et-placage-chene-montana.html",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 649.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 649.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 649.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 649.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 649.95,
@@ -6297,6 +6318,33 @@
         },
         {
           "t": "2026-11-27T12:02:04+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 649.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
           "price": 649.95,
           "currency": "EUR",
           "availability": "en stock",
@@ -6307,44 +6355,21 @@
       ],
       "lowest": 649.95,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 649.95
+      "highest": 649.95,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 649.95,
+          "max": 649.95,
+          "n": 4,
+          "avg": 649.95
+        }
+      ]
     },
     "themasie-beca": {
       "name": "The Masie — Table ronde extensible Beca",
       "url": "https://www.themasie.com/fr/acheter-tableaux-extensibles/228667-table-de-salle-a-manger-ronde-extensible-en-metal-o120-240x120-cm-beca.html?id_c=679446",
       "points": [
-        {
-          "t": "2026-11-20T13:53:06+00:00",
-          "price": 829.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:00:45+00:00",
-          "price": 829.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T17:12:43+00:00",
-          "price": 829.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
-        {
-          "t": "2026-11-20T23:02:03+00:00",
-          "price": 829.95,
-          "currency": "EUR",
-          "availability": "InStock",
-          "promo": [],
-          "source": "direct"
-        },
         {
           "t": "2026-11-21T03:53:56+00:00",
           "price": 829.95,
@@ -6748,11 +6773,47 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 829.95,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 829.95,
       "lowest_at": "2026-11-20T13:53:06+00:00",
-      "highest": 829.95
+      "highest": 829.95,
+      "daily": [
+        {
+          "d": "2026-11-20",
+          "min": 829.95,
+          "max": 829.95,
+          "n": 4,
+          "avg": 829.95
+        }
+      ]
     },
     "ikea": {
       "name": "IKEA — Tapis STOCKHOLM 2025",
@@ -7017,6 +7078,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 279.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 279.0,
@@ -7242,11 +7330,38 @@
           "stock": "inconnue",
           "promo": [],
           "source": "texte"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 749.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 749.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 749.99,
+          "currency": "EUR",
+          "availability": "inconnue",
+          "stock": "inconnue",
+          "promo": [],
+          "source": "texte"
         }
       ],
       "lowest": 596.7,
       "lowest_at": "2026-11-24T19:56:55+00:00",
-      "highest": 596.7
+      "highest": 749.99
     },
     "ikea-skansnaes": {
       "name": "IKEA — Table SKANSNÄS extensible 115/170 cm",
@@ -7503,6 +7618,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 699.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "direct"
         }
       ],
       "lowest": 699.0,
@@ -7680,6 +7822,33 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+plain"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+plain"
+        },
+        {
+          "t": "2026-11-27T23:42:47+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+plain"
+        },
+        {
+          "t": "2026-11-28T00:03:03+00:00",
+          "price": 399.0,
+          "currency": "EUR",
+          "availability": "en stock",
+          "stock": "en stock",
+          "promo": [],
+          "source": "scraper+plain"
         }
       ],
       "lowest": 399.0,
@@ -7698,12 +7867,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 329.0,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 329.0,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-plateau-bois": {
       "name": "Zara — Plateau rectangulaire en bois",
@@ -7717,12 +7891,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 19.99,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 19.99,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-pimente": {
       "name": "Zara — Pimente céramique (lot de 2)",
@@ -7736,12 +7915,17 @@
           "stock": "rupture",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 12.99,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 12.99,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-pincettes": {
       "name": "Zara — Lot de 4 pincettes à nappe citron",
@@ -7755,12 +7939,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 17.99,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 17.99,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-panneau-cadre": {
       "name": "Zara — Panneau magnétique cadre en bois",
@@ -7774,12 +7963,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 49.99,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 49.99,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-panneau-lin": {
       "name": "Zara — Panneau magnétique lin",
@@ -7793,12 +7987,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 189.0,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 189.0,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-panneau-laque": {
       "name": "Zara — Panneau magnétique laqué",
@@ -7812,12 +8011,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 69.99,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 69.99,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "zara-cadre-photo": {
       "name": "Zara — Cadre photo bois",
@@ -7831,12 +8035,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+render"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: "
         }
       ],
       "lowest": 17.99,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 17.99,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "laredoute-351484364": {
       "name": "La Redoute — réf. 351484364",
@@ -7850,12 +8059,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+premium"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.laredoute.be/ppdp/prod-35148436; direct: HTTPError: "
         }
       ],
       "lowest": 63.2,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 63.2,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "laredoute-350323172": {
       "name": "La Redoute — réf. 350323172",
@@ -7869,12 +8083,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+premium"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.laredoute.be/ppdp/prod-35032317; direct: HTTPError: "
         }
       ],
       "lowest": 356.85,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 356.85,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "laredoute-324519698": {
       "name": "La Redoute — réf. 324519698",
@@ -7888,12 +8107,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+premium"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.laredoute.be/ppdp/prod-32451969; direct: HTTPError: "
         }
       ],
       "lowest": 389.4,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 389.4,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "laredoute-351467868": {
       "name": "La Redoute — réf. 351467868",
@@ -7907,12 +8131,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+premium"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.laredoute.be/ppdp/prod-35146786; direct: HTTPError: "
         }
       ],
       "lowest": 419.4,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 419.4,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     },
     "laredoute-350909803": {
       "name": "La Redoute — réf. 350909803",
@@ -7926,12 +8155,17 @@
           "stock": "en stock",
           "promo": [],
           "source": "scraper+premium"
+        },
+        {
+          "t": "2026-11-27T23:22:08+00:00",
+          "price": null,
+          "error": "RuntimeError: direct: HTTPError: 403 Client Error: Forbidden for url: https://www.laredoute.be/ppdp/prod-35090980; direct: HTTPError: "
         }
       ],
       "lowest": 224.25,
       "lowest_at": "2026-11-24T21:08:00+00:00",
       "highest": 224.25,
-      "last_auto_at": "2026-11-24T21:08:00+00:00"
+      "last_auto_at": "2026-11-27T23:22:08+00:00"
     }
   },
   "last_digest": "2026-11-27",
